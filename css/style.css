@@ -32,6 +32,10 @@ p{
   color: #666666;
 }
 
+a{
+  text-decoration: none;
+}
+
 a:hover {
   opacity: 0.75;
 }
@@ -43,20 +47,39 @@ a:hover {
 
 /* ヘッダー */
 header {
+  width: 100%;
+  max-height:92.5px;
   background-color: #ffffff;
   color: #AD7F52;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0.25rem 2rem;
   display: flex;
 }
 
 header img{
-  max-width: 7.5%;
+  max-width: 14%;
   display: inline-block;
 }
 
-.header_namecontainer, header .container, .header_button{
+.clinicname{
+  font-size: 22px;
+}
+
+.header_container, .header_namecontainer, .header_button{
   display: flex;
   align-items: center;
+}
+
+.header_container{
+  width:100%;
+  justify-content: space-between; 
+}
+
+.header_namecontainer{
+  width:48%;
+}
+
+.header_namecontainer{
+  width:48%;
 }
 
 .header_button{
@@ -66,11 +89,12 @@ header img{
 
 .header_botton_content{
   margin:0 0.5rem;
-  padding:0.75rem;
+  padding:1rem;
   background-color: #D5C3AA;
   color:#ffffff;
   border-radius: 20px;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 header h1 {
@@ -94,7 +118,7 @@ header h1 {
   top:0;
   right: 0;
   cursor: pointer;
-  width: 92.5px;
+  width: 90px;
   height: 10%;
   background-color: #867666;
   text-align: center;
@@ -112,23 +136,24 @@ header h1 {
 }
 
 .h-open span:nth-of-type(1) {
-  top: 40px;
+  /* top: 40px; */
+  top:33px;
 }
 
 .h-open span:nth-of-type(2) {
-  top: 55px;
+  /* top: 55px; */
+  top:48px;
 }
 
 .h-open span:nth-of-type(3) {
-  top: 70px;
-}
-
-#navi a {
-  color: #fff;
+  /* top: 70px; */
+  top:63px;
 }
 
 .h-open.active span:nth-of-type(1) {
-  top: 48px;
+  /* top: 48px;
+  left: 24px; */
+  top: 40px;
   left: 24px;
   transform: translateY(6px) rotate(-45deg);
   width: 50%;
@@ -139,10 +164,61 @@ header h1 {
 }
 
 .h-open.active span:nth-of-type(3) {
-  top: 60px;
+  /* top: 60px;
+  left: 24px; */
+  top: 52px;
   left: 24px;
   transform: translateY(-6px) rotate(45deg);
   width: 50%;
+}
+
+#h-nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: -120%;
+  width: 50%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px rgb(0 0 0 / 20%);
+  transition: all 0.6s;
+}
+
+#h-nav ul {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#h-nav li {
+  position: relative;
+  border-bottom: solid 1.5px #867666;
+  margin: 10% 0;
+}
+
+#h-nav li::after {
+  position: absolute;
+  content: "";
+  left: -15px;
+  bottom: 0;
+  height: 100%;
+  width: 3.75px;
+  background-color: #867666;
+}
+
+#h-nav li a {
+  color: #333;
+  display: block;
+  font-size: clamp(0.9rem, 0.773rem + 0.64vw, 1.25rem);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+#h-nav.panelactive {
+  right: 0;
 }
 
 
@@ -150,7 +226,6 @@ header h1 {
 #fv {
   max-width: 100%;
   max-height: 100%;
-  background-color: #eee;
   text-align: center;
   background-image: url(../img/fv-1.jpg);
   background-repeat: no-repeat;
@@ -521,6 +596,7 @@ line-height: 1.8;
   max-height: 8rem;
   overflow: hidden;
   object-fit: cover; 
+  /* border:solid 1.75px #867666; */
 }
 
 .casephoto_box_before p, .casephoto_box_after p{
@@ -568,7 +644,8 @@ line-height: 1.8;
 }
 
 .policy_box_textblock{
-padding: 0 1rem;
+  margin:auto 0;
+  padding: 0 1rem;
 }
 
 #policy img {
@@ -799,7 +876,7 @@ font-weight: bolder;
 }
 
 #access dt{
-  width: 40%;
+  width: 35%;
   padding: 0 0 1rem 2rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #867666;
@@ -809,7 +886,7 @@ font-weight: bolder;
 }
 
 #access dd{
-  width: 55%;
+  width: 60%;
   padding: 0 0 1rem 0.5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #867666;

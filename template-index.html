@@ -6,21 +6,26 @@
   <title>○○○美容クリニック</title>
   <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="./img/icon.jpg" />
+  <link rel="icon" href="./img/icon.png" />
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <header>
-    <!-- <h1></h1> -->
-    <div class="header_namecontainer">
-      <img src="./img/icon.jpg">
-      <h5 class="clinicname">○○○美容クリニック</h5>
-    </div>
-    <div class="header_button">
-      <h6 class="header_botton_content">WEB予約</h6>
-      <h6 class="header_botton_content">お問い合わせ</h6>
+    <div class="header_container">
+      <div class="header_namecontainer">
+        <img src="./img/icon.png">
+        <h5 class="clinicname">○○○美容クリニック</h5>
+      </div>
+      <div class="header_button">
+        <a href="">
+          <h6 class="header_botton_content">WEB予約</h6>
+        </a>
+        <a href="">
+          <h6 class="header_botton_content">お問い合わせ</h6>
+        </a>
+      </div>
     </div>
     <nav class="header-wrap__nav">
       <ul class="header-wrap__nav__list">
@@ -44,6 +49,24 @@
       <span></span>
       <span></span>
     </div>
+    <nav id="h-nav">
+      <div id="h-nav__list">
+        <ul>
+          <li><a href="#salutation">院長挨拶</a></li>
+          <li><a href="#problem">よくある問題</a></li>
+          <li><a href="#about">About　当クリニックの眉アートメイクについて</a></li>
+          <li><a href="#design">Design　選べるデザイン</a></li>
+          <li><a href="#flowchart">Flowchart　お悩み別おすすめ施術</a></li>
+          <li><a href="#expalanation">アートメイクの説明</a></li>
+          <li><a href="#casephoto">Case Photo 実際の症例写真</a></li>
+          <li><a href="#policy">Policy　○○○美容クリニックの３つのこだわり</a></li>
+          <li><a href="#flow">Flow　施術の流れ</a></li>
+          <li><a href="#price">Price 料金表</a></li>
+          <li><a href="#contact">問い合わせ</a></li>
+          <li><a href="#access">Access アクセス</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main>
     <section id="fv">
@@ -544,6 +567,9 @@
   <footer>
     <p>&copy; 2025 ○○○美容クリニック All rights reserved.</p>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/header.js"></script>
 </body>
+
 
 </html>
