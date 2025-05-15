@@ -8,9 +8,46 @@ body {
   color: #333;
 }
 
+@media screen and (max-width: 768px) {
+body{
+font-size: 16px;
+}
+}
+
+@media screen and (max-width: 480px) {
+body{
+font-size: 14px;
+}
+
+img{
+object-fit: contain;
+}
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+.container {
+  max-width: 900px;
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 768px) {
+.container {
+  max-width: 680px;
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 480px) {
+.container{
+  max-width: 380px;
+  margin: 0 auto;
+}
 }
 
 .heading, .heading_text{
@@ -22,11 +59,23 @@ body {
   font-size: 30px;
 }
 
+@media screen and (max-width: 768px) {
+.heading{
+  font-size: 26px;
+}
+}
+
 .heading_text{
   font-size: 16px;
   margin-bottom: 2.5rem;
 }
 
+@media screen and (max-width: 768px) {
+.heading_text{
+  font-size: 14px;
+  margin-bottom: 2.5rem;
+}
+}
 
 p{
   color: #666666;
@@ -55,6 +104,12 @@ header {
   display: flex;
 }
 
+@media screen and (max-width: 480px) {
+header {
+  padding: 0.5rem 0 0.25rem 0.5rem;
+}
+}
+
 header img{
   max-width: 14%;
   display: inline-block;
@@ -62,6 +117,12 @@ header img{
 
 .clinicname{
   font-size: 22px;
+}
+
+@media screen and (max-width: 480px) {
+.clinicname{
+  font-size: 18px;
+}
 }
 
 .header_container, .header_namecontainer, .header_button{
@@ -78,9 +139,15 @@ header img{
   width:48%;
 }
 
+@media screen and (max-width: 480px) {
 .header_namecontainer{
-  width:48%;
+  width:90%;
 }
+}
+
+/* .header_namecontainer{
+  width:48%;
+} */
 
 .header_button{
   max-width: 30rem;
@@ -95,6 +162,12 @@ header img{
   border-radius: 20px;
   font-size: 20px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+.header_botton_content{
+display: none;
+}
 }
 
 header h1 {
@@ -124,6 +197,13 @@ header h1 {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+.h-open {
+  width: 60px;
+  height: 8%;
+}
+}
+
 .h-open span {
   display: inline-block;
   transition: all 0.4s;
@@ -135,9 +215,23 @@ header h1 {
   width: 50%;
 }
 
+@media screen and (max-width: 480px) {
+.h-open span {
+  left: 16px;
+  height: 2.5px;
+  border-radius: 2px;
+}
+}
+
 .h-open span:nth-of-type(1) {
   /* top: 40px; */
   top:33px;
+}
+
+@media screen and (max-width: 480px) {
+.h-open span:nth-of-type(1) {
+  top:18px;
+}
 }
 
 .h-open span:nth-of-type(2) {
@@ -145,9 +239,21 @@ header h1 {
   top:48px;
 }
 
+@media screen and (max-width: 480px) {
+.h-open span:nth-of-type(2) {
+  top:29px;
+}
+}
+
 .h-open span:nth-of-type(3) {
   /* top: 70px; */
   top:63px;
+}
+
+@media screen and (max-width: 480px) {
+.h-open span:nth-of-type(3) {
+  top:40px;
+}
 }
 
 .h-open.active span:nth-of-type(1) {
@@ -233,8 +339,20 @@ header h1 {
   color:#fff;
 }
 
+@media screen and (max-width: 480px) {
+#fv {
+  background-image: url(../img/fv-1-sp.png);
+}
+}
+
 #fv .container{
   padding: 2.5rem 0;
+}
+
+@media screen and (max-width: 480px) {
+#fv .container{
+  padding: 4rem 0;
+}
 }
 
 #fv h1, h2, p{
@@ -245,8 +363,26 @@ header h1 {
   font-size: 30px;
 }
 
+@media screen and (max-width: 480px) {
+#fv h2{
+  font-size: 20px;
+}
+}
+
 #fv h2 span{
   font-size: 48px;
+}
+
+@media screen and (max-width: 768px) {
+#fv h2 span{
+  font-size: 44px;
+}
+}
+
+@media screen and (max-width: 480px) {
+#fv h2 span{
+  font-size: 36px;
+}
 }
 
 #fv h1{
@@ -259,6 +395,19 @@ header h1 {
   font-size: 34px;
 }
 
+@media screen and (max-width: 768px) {
+#fv h1{
+  font-size: 30px;
+}
+}
+
+@media screen and (max-width: 480px) {
+#fv h1{
+  font-size: 26px;
+  padding:0.75rem;
+}
+}
+
 #fv p{
   max-width: 32rem;
   text-align: center;
@@ -266,6 +415,19 @@ header h1 {
   line-height: 40px;
   left:0;
   color:#fff;
+}
+
+@media screen and (max-width: 768px) {
+#fv p{
+  font-size: 22px;
+  line-height: 36px;
+}
+}
+
+@media screen and (max-width: 480px) {
+#fv p{
+  font-size: 20px;
+}
 }
 
 
@@ -290,6 +452,14 @@ header h1 {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+#salutation h2{
+  font-size: 20px;
+  margin-bottom: 0;
+}
+}
+
+
 .salutation_textbox_text{
   margin-bottom: 1.5rem;
 }
@@ -313,13 +483,40 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
+@media screen and (max-width: 480px) {
+#problem h2{
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+}
+}
+
 .problem_box{
   display: flex;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+.problem_box{
+font-size: 12px;
+}
+}
+
 #problem ul li{
   margin-top: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+#problem img{
+  width:40%;
+  object-fit: cover;
+}
+}
+
+@media screen and (max-width: 480px) {
+#problem img{
+  width:30%;
+  object-fit: cover;
+}
 }
 
 /* About 当クリニックの眉アートメイクについて */
@@ -332,6 +529,12 @@ header h1 {
   color: #867666;
   font-size: 26px;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+#about h4{
+  font-size: 22px;
+}
 }
 
 .about_box{
@@ -357,6 +560,7 @@ header h1 {
   color: #fff;
   line-height:1.2;
   font-weight: bold;
+  flex-shrink: 0;
 }
 
 .about_box_outline span{
@@ -370,11 +574,24 @@ header h1 {
   font-size: 24px;
 }
 
+@media screen and (max-width: 480px) {
+.about_box_outline h6{
+  font-size: 20px;
+}
+}
+
 .about_box_inner{
   display: flex;
   justify-content: space-between;
   margin:1rem;
 }
+
+@media screen and (max-width: 480px) {
+.about_box_inner{
+  display: block;
+}
+}
+
 
 .about_box_inner p{
   padding:0 1.25rem;
@@ -382,8 +599,24 @@ header h1 {
   line-height:2.75 ;
 }
 
+@media screen and (max-width: 480px) {
+.about_box_inner p{
+  padding:0 ;
+  line-height:2 ;
+}
+}
+
 .about_box_inner img{
   border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+.about_box_inner img{
+  width:40%;
+  object-fit: contain;
+  display: block;
+  margin:0.5rem auto 1rem;
+}
 }
 
 
@@ -457,12 +690,35 @@ max-width: 90%;
   margin-bottom: 2.5rem;
 }
 
+@media screen and (max-width: 480px) {
+#flowchart .flowchart_recommendation{
+  width:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
 #flowchart .flowchart_recommendation li{
   width: 16rem;
   padding:0.5rem 0;
   background-color: #fff;
   border:solid 1.75px #867666;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+#flowchart .flowchart_recommendation li{
+  width: 12rem;
+}
+}
+
+@media screen and (max-width: 480px) {
+#flowchart .flowchart_recommendation li:first-of-type{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
 }
 
 .flowchart_comment{
@@ -474,9 +730,22 @@ max-width: 90%;
   margin:2.5rem auto 4rem auto;
 }
 
+@media screen and (max-width: 768px) {
+.flowchart_box{
+  width:100% ;
+  margin:1.5rem auto 4rem auto;
+}
+}
+
 .flowchart_box_inner{
   display: flex;
   justify-content:space-between;
+}
+
+@media screen and (max-width: 480px) {
+.flowchart_box_inner{
+  display: block;
+}
 }
 
 .flowchart_box_inner img{
@@ -484,10 +753,38 @@ max-width: 90%;
   object-fit: contain;
 }
 
+@media screen and (max-width: 768px) {
+.flowchart_box_inner img{
+  width: 40%;
+}
+}
+
+@media screen and (max-width: 480px) {
+.flowchart_box_inner img{
+  width: 100%;
+  object-fit: cover;
+}
+}
+
 .flowchart_box_inner_text{
   width:60%;
   text-align: left;
   margin:auto 0;
+}
+
+@media screen and (max-width: 768px) {
+.flowchart_box_inner_text{
+  max-width:300px;
+  text-align: left;
+  margin:0 auto;
+}
+}
+
+@media screen and (max-width: 480px) {
+.flowchart_box_inner_text{
+  width:100%;
+  margin:0 auto;
+}
 }
 
 .flowchart_box_inner_text li{
@@ -527,10 +824,28 @@ line-height: 1.8;
   width:60%;
 }
 
+@media screen and (max-width: 480px) {
+.flowchart_menu_box_mainimg{
+  width:60%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.flowchart_menu_box_subimg{
+  width:90%;
+}
+}
+
 .flowchart_menu_box p{
   width:60%;
   text-align: center;
   margin:0.5rem auto;
+}
+
+@media screen and (max-width: 480px) {
+.flowchart_menu_box p{
+  text-align:left;
+}
 }
 
 .flowchart_menu_box ul{
@@ -556,10 +871,28 @@ line-height: 1.8;
   max-width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+#expalanation img{
+object-fit: contain;
+}
+}
+
+@media screen and (max-width: 480px) {
+#expalanation img{
+  max-width: 40%;
+}
+}
+
 #expalanation h3{
   color:#AD7F52;
   font-size: 24px;
   margin-bottom: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+#expalanation h3{
+  font-size: 22px;
+}
 }
 
 #expalanation p{
@@ -579,6 +912,12 @@ line-height: 1.8;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+.casephoto_box{
+  display: block;
+}
+}
+
 .casephoto_box_before{
   margin-bottom: 1rem;
 }
@@ -589,6 +928,19 @@ line-height: 1.8;
   margin:0 auto 2rem auto;
   box-sizing: border-box;
   line-height: 0.75;
+}
+
+@media screen and (max-width: 768px) {
+.casephoto_box_before, .casephoto_box_after{
+  width: 42%;
+}
+}
+
+@media screen and (max-width: 480px) {
+.casephoto_box_before, .casephoto_box_after{
+  width: 80%;
+  margin:0 auto 1rem auto;
+}
 }
 
 .casephoto_box_before img, .casephoto_box_after img{
@@ -625,6 +977,13 @@ line-height: 1.8;
   font-size:24px ;
 }
 
+@media screen and (max-width: 480px) {
+.casephoto_button{
+  padding:1rem 2.5rem;
+  font-size:20px ;
+}
+}
+
 
 /* Policy  ○○○美容クリニックの３つのこだわり */
 #policy{
@@ -635,6 +994,12 @@ line-height: 1.8;
   margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+.policy_box{
+  display: block;
+}
 }
 
 #policy h4{
@@ -650,6 +1015,13 @@ line-height: 1.8;
 
 #policy img {
   border-radius:  10px;;
+}
+
+@media screen and (max-width: 480px) {
+#policy img {
+display: block;
+margin: 0 auto;
+}
 }
 
 
@@ -740,6 +1112,12 @@ text-align: left;
   color: #36454F;
 }
 
+@media screen and (max-width: 480px) {
+.flow_box_step{
+  width: 25%;
+}
+}
+
 .flow_box_step span{
 font-size: 28px;
 font-weight: bolder;
@@ -753,6 +1131,12 @@ font-weight: bolder;
   color: #867666;
   margin-bottom: 0.5rem;
   font-size: 22px;
+}
+
+@media screen and (max-width: 480px) {
+.flow_box_textblock h6{
+  font-size: 18px;
+}
 }
 
 
@@ -778,6 +1162,12 @@ font-weight: bolder;
   border: solid 1px #867666;
 }
 
+@media screen and (max-width: 768px) {
+#price table:last-of-type{
+  margin: 0 auto 0.25rem auto;
+}
+}
+
 .pricelist-1{
   border: solid 1px #867666;
 }
@@ -785,6 +1175,12 @@ font-weight: bolder;
 .pricelist-1_price{
   width:33%;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+.pricelist-1_price{
+  width:35%;
+}
 }
 
 .pricelist-2, .listappear{
@@ -801,6 +1197,12 @@ font-weight: bolder;
   margin:0 auto;
 }
 
+@media screen and (max-width: 768px) {
+.price_attention{
+font-size: 14px;
+}
+}
+
 
 /* 問い合わせ */
 #contact{
@@ -812,9 +1214,28 @@ font-weight: bolder;
   justify-content: center;
 }
 
+@media screen and (max-width: 480px) {
+#contact .container{
+  display: block;
+}
+}
+
+@media screen and (max-width: 480px) {
+#contact .container{
+text-align: center;
+}
+}
+
 .contact_subcontainer{
   width:40%;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+.contact_subcontainer{
+  width:100%;
+  text-align: center;
+}
 }
 
 .contact_subcontainer_phonenumber{
@@ -862,6 +1283,24 @@ font-weight: bolder;
   font-size: 22px;
 }
 
+@media screen and (max-width: 768px) {
+.contact_button{
+  max-height:3rem;
+  padding:1rem 1.5rem;
+  border-radius: 50px;
+  font-size: 18px;
+}
+}
+
+@media screen and (max-width: 480px) {
+.contact_button{
+  max-height:3rem;
+  margin-top:1.25rem;
+  padding:0.5rem 2rem;
+  font-size: 16px;
+}
+}
+
 
 /* Access  アクセス */
 #access{
@@ -875,6 +1314,18 @@ font-weight: bolder;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  #access dl{
+  width:80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #access dl{
+  width:100%;
+  }
+}
+
 #access dt{
   width: 35%;
   padding: 0 0 1rem 2rem;
@@ -883,6 +1334,19 @@ font-weight: bolder;
   display: flex; 
   align-items: center; 
   justify-content: left; 
+}
+
+@media screen and (max-width: 1024px) {
+  #access dt{
+  width:30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #access dt{
+  width:29%;
+  padding: 0 0 1rem 1rem;
+  }
 }
 
 #access dd{
@@ -895,10 +1359,22 @@ font-weight: bolder;
   justify-content: left; 
 }
 
+@media screen and (max-width: 480px) {
+#access dd{
+  width: 60%;
+}
+}
+
 .map{
   width:80%;
   display: block;
   margin: 2rem auto 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+.map{
+  width:100%;
+}
 }
 
 footer {
