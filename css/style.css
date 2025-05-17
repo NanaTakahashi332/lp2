@@ -1347,6 +1347,10 @@ text-align: center;
   width:29%;
   padding: 0 0 1rem 1rem;
   }
+
+  #access dt:first-of-type{
+  width:40%;
+    }
 }
 
 #access dd{
@@ -1363,6 +1367,11 @@ text-align: center;
 #access dd{
   width: 60%;
 }
+
+#access dd:first-of-type{
+  width: 50%;
+}
+
 }
 
 .map{
