@@ -472,7 +472,7 @@ header h1 {
 #fv p{
   max-width: 32rem;
   text-align: left;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 40px;
   left:0;
   color:#fff;
@@ -956,14 +956,28 @@ line-height: 1.8;
 .flowchart_menu_box ul{
   width: 60%;
   margin: 0 auto;
+  padding: 0;
   display: flex;
   justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-start; 
 }
 
 @media screen and (max-width: 480px) {
 .flowchart_menu_box ul{
   width: 80%;
 }
+}
+
+.flowchart_menu_box ul li{
+flex: 1;
+}
+
+.flowchart_menu_box_subimg{
+  width: 100%;
+height:12rem;
+  display: block;
+  object-fit: cover;
 }
 
 
@@ -1029,9 +1043,13 @@ line-height: 1.8;
 }
 
 .casephoto_box{
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
   display: flex;
   justify-content: space-between;
+}
+
+.casephoto_item{
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -1174,8 +1192,8 @@ margin: 1rem auto auto auto;
 }
 
 .Label {
-  height:3rem;
-  line-height:3rem;;
+  height:4.5rem;
+  line-height:4.5rem;;
 	padding: 0.5rem;
 	display: block;
 	background:#D5C3AA;
@@ -1346,10 +1364,15 @@ font-size: 14px;
 }
 
 .price_attention h7{
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bolder;
 }
 
+
+.price_attention_space{
+  display: block;
+  margin-top: 1.5rem;
+}
 
 
 /* 問い合わせ */
@@ -1393,16 +1416,17 @@ text-align: center;
 
 #contact img{
   width: 16%;
+  object-fit: cover;
 }
 
 .phonenumber{
-  font-size: 46px;
+  font-size: 2em;
   margin:auto 1rem;
 }
 
 #contact h4{
   margin-bottom: 1rem;
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 #contact h7{
@@ -1411,7 +1435,7 @@ text-align: center;
   border-radius: 50px;
   margin:0 0.75rem;
   padding:0.5rem 1.5rem;
-  font-size: 28px;
+  font-size: 1.25em;
 }
 
 #contact a{
@@ -1429,7 +1453,7 @@ text-align: center;
   text-align: center;
   color: #fff;
   border-radius: 50px;
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 768px) {
