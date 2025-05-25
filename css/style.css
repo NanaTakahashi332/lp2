@@ -33,19 +33,22 @@ object-fit: contain;
 
 @media screen and (max-width: 1024px) {
 .container {
-  max-width: 800px;
+  max-width: 900px;
+  width:100%;
 }
 }
 
 @media screen and (max-width: 768px) {
 .container {
   max-width: 680px;
+  width:90%;
 }
 }
 
 @media screen and (max-width: 480px) {
 .container{
   max-width: 380px;
+  width:90%;
 }
 }
 
@@ -101,28 +104,23 @@ a:hover {
 /* ヘッダー */
 header {
   width: 100%;
-  height:4rem;
+  height:6rem;
   background-color: #ffffff;
   color: #AD7F52;
   /* padding: 0.5rem 0 0.25rem 2rem; */
   display: flex;
 }
-@media screen and (max-width: 1024px) {
-  /* header {
-    height: 8vw;
-    高さの指定の仕方
-  } */
-}
 
 @media screen and (max-width: 768px) {
   header {
+  height:4rem;
   font-size:14px ;
 }
 }
 
 @media screen and (max-width: 480px) {
 header {
-  height: 11.75vw;
+  height:4rem;
   padding:0 0 0 0.5rem;
   font-size:4vw ;
 }
@@ -157,6 +155,12 @@ header img{
   width:48%;
 }
 
+@media screen and (max-width: 768px) {
+.header_namecontainer{
+  width:90%;
+}
+}
+
 @media screen and (max-width: 480px) {
 .header_namecontainer{
   width:90%;
@@ -187,8 +191,7 @@ header img{
 
 @media screen and (max-width: 768px) {
 .header_botton_content{
-  padding:0.5rem 0.75rem;
-  font-size: 20px;
+display: none;
 }
 }
 
@@ -219,30 +222,30 @@ header h1 {
   top:0;
   right: 0;
   cursor: pointer;
-  width: 5vw;
-  height: 5vw;
+  width: 6rem;
+  height:6rem;
   background-color: #867666;
   text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
   .h-open {
-  width: 8vw;
-  height: 8vw;
+  width: 6rem;
+  height:6rem;
 }
 }
 
 @media screen and (max-width: 768px) {
 .h-open {
-  width: 10vw;
-  height:10vw;
+  width: 4rem;
+  height:4rem;
 }
 }
 
 @media screen and (max-width: 480px) {
 .h-open {
-  width: 12vw;
-  height: 12vw;
+  width: 4rem;
+  height:4rem;
 }
 }
 
@@ -259,7 +262,7 @@ header h1 {
 
 @media screen and (max-width: 768px) {
 .h-open span {
-  left: 20px;
+  left: 1.1rem;
   height: 2.5px;
   border-radius: 2px;
 }
@@ -280,16 +283,16 @@ header h1 {
 
 @media screen and (max-width: 768px) {
 .h-open span:nth-of-type(1) {
-  top:25px;
+  top:1rem;
 }
 
 .h-open span:nth-of-type(2) {
-  top:40px;
+  top:2rem;
 }
 
 
 .h-open span:nth-of-type(3) {
-  top:55px;
+  top:3rem;
 }
 }
 
@@ -541,6 +544,12 @@ header h1 {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+#salutation h2{
+  font-size: 26px;
+}
+}
+
 @media screen and (max-width: 480px) {
 #salutation h2{
   font-size: 20px;
@@ -572,6 +581,12 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  #problem h2{
+  font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 480px) {
 #problem h2{
   font-size: 22px;
@@ -582,6 +597,12 @@ header h1 {
 .problem_box{
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .problem_box{
+font-size: 14px;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -663,6 +684,12 @@ font-size: 12px;
   font-size: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .about_box_outline h6{
+  font-size: 22px;
+}
+}
+
 @media screen and (max-width: 480px) {
 .about_box_outline h6{
   font-size: 20px;
@@ -673,6 +700,12 @@ font-size: 12px;
   display: flex;
   justify-content: space-between;
   margin:1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about_box_inner{
+  display: block;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -701,18 +734,25 @@ font-size: 12px;
 
 @media screen and (max-width: 768px) {
 .about_box_inner img{
-  object-fit: contain;
+    display: block;
+  margin:0.5rem auto 1rem;
 }
 }
 
 @media screen and (max-width: 480px) {
 .about_box_inner img{
   width:40%;
-  /* object-fit: contain; */
   display: block;
   margin:0.5rem auto 1rem;
 }
 
+.about_box_inner_reverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
+}
+
+@media screen and (max-width: 768px) {
 .about_box_inner_reverse{
   display: flex;
   flex-direction: column-reverse;
@@ -766,6 +806,12 @@ max-width: 90%;
   font-size: 28px;
 }
 
+@media screen and (max-width: 768px) {
+  #design li h4{
+  font-size: 22px;
+}
+}
+
 #design li p{
   text-align: left;
 }
@@ -807,7 +853,7 @@ max-width: 90%;
 margin:0 auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 #flowchart .flowchart_recommendation{
   width: 100%;
   display: block;
@@ -906,7 +952,7 @@ margin: auto;
 
 @media screen and (max-width: 768px) {
 .flowchart_box_inner_text{
-  max-width:300px;
+  width:55%;
   text-align: left;
   margin:0 auto;
 }
@@ -937,6 +983,12 @@ line-height: 1.8;
   font-size: 26px;
 }
 
+@media screen and (max-width: 768px) {
+#flowchart h4{
+  font-size: 20px;
+}
+}
+
 .flowchart_menu{
   margin-top: 4rem;
 }
@@ -957,8 +1009,8 @@ line-height: 1.8;
   width:60%;
 }
 
-@media screen and (max-width: 480px) {
-.flowchart_menu_box_mainimg{
+@media screen and (max-width: 768px) {
+  .flowchart_menu_box_mainimg{
   width:80%;
 }
 }
@@ -973,6 +1025,12 @@ line-height: 1.8;
   width:60%;
   text-align: center;
   margin:0.5rem auto;
+}
+
+@media screen and (max-width: 768px) {
+  .flowchart_menu_box p{
+  width:80%;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -991,7 +1049,7 @@ line-height: 1.8;
   align-items: flex-start; 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 .flowchart_menu_box ul{
   width: 80%;
 }
@@ -1149,6 +1207,12 @@ height:12rem;
   font-size:24px ;
 }
 
+@media screen and (max-width: 768px) {
+  .casephoto_button{
+  font-size:20px ;
+}
+}
+
 @media screen and (max-width: 480px) {
 .casephoto_button{
   padding:1rem 2.5rem;
@@ -1168,20 +1232,27 @@ height:12rem;
   justify-content: space-between;
 }
 
-.policy_box:nth-of-type(2){
-flex-direction: row-reverse;
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 .policy_box{
   display: block;
 }
 }
 
+/* .policy_box:nth-of-type(2){
+flex-direction: row-reverse;
+} */
+
+
 #policy h4{
   font-size: 30px;
   margin-bottom: 0.75rem;
   color:#867666;
+}
+
+@media screen and (max-width: 768px) {
+#policy h4{
+  font-size: 24px;
+}
 }
 
 .policy_box_textblock{
@@ -1193,7 +1264,7 @@ flex-direction: row-reverse;
   border-radius:  10px;;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 #policy img {
 display: block;
 margin: 1rem auto auto auto;
@@ -1204,6 +1275,14 @@ margin: 1rem auto auto auto;
   flex-direction: column-reverse;
 }
 }
+
+@media screen and (max-width: 768px) {
+ #policy .policy_box_reverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
+} 
+
 
 
 /* Q&A  アートメイクの不安にお答えします */
@@ -1231,6 +1310,13 @@ margin: 1rem auto auto auto;
   border:solid 1.5px #867666;
   font-size: 24px;
 }
+
+@media screen and (max-width: 768px) {
+  .Label {
+  font-size: 20px;
+}
+}
+
 .Label::before{
 	content:"";
 	width: 1rem;
@@ -1261,6 +1347,12 @@ margin: 1rem auto auto auto;
 .content p {
 text-align: left;
 font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+.content p {
+font-size: 20px;
+}
 }
 
 .toggle:checked + .Label + .content {
@@ -1296,7 +1388,14 @@ font-size: 24px;
   /* text-align: center; */
   justify-content: center;
   color: #36454F;
-    font-size: 26px;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+.flow_box_step{
+  width: 20%;
+  font-size: 22px;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -1310,6 +1409,12 @@ font-size: 34px;
 font-weight: bolder;
 }
 
+@media screen and (max-width: 768px) {
+.flow_box_step span{
+font-size: 30px;
+}
+}
+
 .flow_box_textblock{
   width:85%;
 }
@@ -1318,6 +1423,12 @@ font-weight: bolder;
   color: #867666;
   margin-bottom: 0.5rem;
   font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+.flow_box_textblock h6{
+  font-size: 22px;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -1331,6 +1442,13 @@ font-weight: bolder;
 #price{
   background-color:#fff;
   font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  #price{
+  background-color:#fff;
+  font-size: 18px;
+}
 }
 
 #price h4{
@@ -1396,6 +1514,11 @@ font-size: 14px;
   font-weight: bolder;
 }
 
+@media screen and (max-width: 768px) {
+  .price_attention h7{
+  font-size: 20px;
+}
+}
 
 .price_attention_space{
   display: block;
@@ -1409,11 +1532,12 @@ font-size: 14px;
 }
 
 #contact .container{
+  width:90%;
   display: flex;
   justify-content:space-between;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 #contact .container{
   display: block;
   text-align: center;
@@ -1425,7 +1549,7 @@ font-size: 14px;
   text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 .contact_subcontainer{
   width:100%;
   text-align: center;
@@ -1447,11 +1571,11 @@ font-size: 14px;
   margin:auto 1rem;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
 .phonenumber{
   font-size: 1.5em;
 }
-}
+} */
 
 #contact h4{
   margin-bottom: 1rem;
@@ -1465,20 +1589,22 @@ font-size: 14px;
   margin:0 0.75rem;
   padding:0.5rem 1.5rem;
   font-size: 1.25em;
+clamp(1rem, 0.9rem + 0.5vw, 1.5rem)
 }
 
 @media screen and (max-width: 1024px) {
 #contact h7{
-  font-size: 1em;
+  font-size: 1.5rem;
   padding:0.5rem 1rem;
 }
 }
 
 @media screen and (max-width: 768px) {
 #contact h7{
-  display: block;
+  width:20%;
+  display: inline-block;
   font-size: 1em;
-  margin:0.75rem 0;
+  margin:0.75rem 0.5rem;
   padding:0.5rem 1rem;
 }
 }
@@ -1604,6 +1730,15 @@ font-size: 14px;
 
 #access dd:first-of-type{
   width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    #access dt:first-of-type{
+  width: 50%;
+}
+  #access dd:first-of-type{
+  width: 40%;
+}
 }
 
 /* @media screen and (max-width: 1024px) {
