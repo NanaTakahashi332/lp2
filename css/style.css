@@ -27,27 +27,25 @@ object-fit: contain;
 
 .container {
   max-width: 1100px;
+  /* width:90%; */
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {
 .container {
-  max-width: 900px;
-    margin: 0 auto;
+  max-width: 800px;
 }
 }
 
 @media screen and (max-width: 768px) {
 .container {
   max-width: 680px;
-    margin: 0 auto;
 }
 }
 
 @media screen and (max-width: 480px) {
 .container{
   max-width: 380px;
-  margin: 0 auto;
 }
 }
 
@@ -78,6 +76,10 @@ object-fit: contain;
 }
 }
 
+img{
+  object-fit: cover;
+}
+
 p{
   color: #666666;
 }
@@ -99,17 +101,22 @@ a:hover {
 /* ヘッダー */
 header {
   width: 100%;
-  height:5vw;
+  height:4rem;
   background-color: #ffffff;
   color: #AD7F52;
   /* padding: 0.5rem 0 0.25rem 2rem; */
   display: flex;
 }
+@media screen and (max-width: 1024px) {
+  /* header {
+    height: 8vw;
+    高さの指定の仕方
+  } */
+}
 
 @media screen and (max-width: 768px) {
   header {
-  height:10vw;
-  font-size:8vw ;
+  font-size:14px ;
 }
 }
 
@@ -171,6 +178,20 @@ header img{
   font-weight: bold;
 }
 
+@media screen and (max-width: 1024px) {
+.header_botton_content{
+  padding:0.5rem 1rem;
+  font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.header_botton_content{
+  padding:0.5rem 0.75rem;
+  font-size: 20px;
+}
+}
+
 @media screen and (max-width: 480px) {
 .header_botton_content{
 display: none;
@@ -202,6 +223,13 @@ header h1 {
   height: 5vw;
   background-color: #867666;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .h-open {
+  width: 8vw;
+  height: 8vw;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -1096,12 +1124,12 @@ height:12rem;
 }
 
 .casephoto_box_before p, .casephoto_box_after p{
-  height:2rem;
+  height:2.5rem;
   text-align: center;
   border:solid 1.75px #867666;
   background-color: #fff;
   margin:auto;
-  padding:0.5rem;
+  padding:0.75rem;
   box-sizing: border-box;
 }
 
@@ -1224,7 +1252,7 @@ margin: 1rem auto auto auto;
 }
 .content {
 	height: 0;
-	margin-bottom:0.25rem;
+	margin-bottom:1rem;
 	padding:0 1rem;
 	overflow: hidden;
   border:solid 1.5px #867666;
@@ -1382,18 +1410,13 @@ font-size: 14px;
 
 #contact .container{
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
 }
 
 @media screen and (max-width: 480px) {
 #contact .container{
   display: block;
-}
-}
-
-@media screen and (max-width: 480px) {
-#contact .container{
-text-align: center;
+  text-align: center;
 }
 }
 
@@ -1420,8 +1443,14 @@ text-align: center;
 }
 
 .phonenumber{
-  font-size: 2em;
+  font-size: 1.75em;
   margin:auto 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+.phonenumber{
+  font-size: 1.5em;
+}
 }
 
 #contact h4{
@@ -1438,11 +1467,39 @@ text-align: center;
   font-size: 1.25em;
 }
 
+@media screen and (max-width: 1024px) {
+#contact h7{
+  font-size: 1em;
+  padding:0.5rem 1rem;
+}
+}
+
+@media screen and (max-width: 768px) {
+#contact h7{
+  display: block;
+  font-size: 1em;
+  margin:0.75rem 0;
+  padding:0.5rem 1rem;
+}
+}
+
 #contact a{
   max-width:58%;
   display: inline-block;
   text-decoration: none;
   margin: auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+#contact a{
+  max-width:54%;
+}
+}
+
+@media screen and (max-width: 768px) {
+#contact a{
+  max-width:50%;
+}
 }
 
 .contact_button{
@@ -1453,21 +1510,24 @@ text-align: center;
   text-align: center;
   color: #fff;
   border-radius: 50px;
-  font-size: 1.5em;
+  font-size: 1.25em;
+}
+
+@media screen and (max-width: 1024px) {
+.contact_button{
+  max-height:6rem;
+}
 }
 
 @media screen and (max-width: 768px) {
 .contact_button{
-  max-height:3rem;
-  padding:1rem 1.5rem;
-  border-radius: 50px;
-  font-size: 18px;
+  max-height:9rem;
 }
 }
 
 @media screen and (max-width: 480px) {
 .contact_button{
-  max-height:3rem;
+  max-height:6rem;
   margin-top:1.25rem;
   padding:0.5rem 2rem;
   font-size: 16px;
@@ -1540,12 +1600,17 @@ text-align: center;
 #access dd{
   width: 60%;
 }
+}
 
 #access dd:first-of-type{
-  width: 50%;
+  width: 60%;
 }
 
+/* @media screen and (max-width: 1024px) {
+#access dd:first-of-type{
+  width: 64%;
 }
+} */
 
 .map{
   width:80%;
