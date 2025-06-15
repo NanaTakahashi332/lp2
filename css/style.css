@@ -10,19 +10,19 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-body{
-font-size: 16px;
-}
+  body {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-body{
-font-size: 14px;
-}
+  body {
+    font-size: 14px;
+  }
 
-img{
-object-fit: contain;
-}
+  img {
+    object-fit: contain;
+  }
 }
 
 .container {
@@ -32,62 +32,62 @@ object-fit: contain;
 }
 
 @media screen and (max-width: 1024px) {
-.container {
-  max-width: 900px;
-  width:100%;
-}
+  .container {
+    max-width: 900px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-.container {
-  max-width: 680px;
-  width:90%;
-}
+  .container {
+    max-width: 680px;
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.container{
-  max-width: 380px;
-  width:90%;
-}
+  .container {
+    max-width: 380px;
+    width: 90%;
+  }
 }
 
-.heading, .heading_text{
+.heading, .heading_text {
   text-align: center;
   color: #AD7F52;
 }
 
-.heading{
+.heading {
   font-size: 40px;
 }
 
 @media screen and (max-width: 768px) {
-.heading{
-  font-size: 26px;
-}
+  .heading {
+    font-size: 26px;
+  }
 }
 
-.heading_text{
+.heading_text {
   font-size: 22px;
   margin-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 768px) {
-.heading_text{
-  font-size: 14px;
-  margin-bottom: 2.5rem;
-}
+  .heading_text {
+    font-size: 14px;
+    margin-bottom: 2.5rem;
+  }
 }
 
-img{
+img {
   object-fit: cover;
 }
 
-p{
+p {
   color: #666666;
 }
 
-a{
+a {
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -96,116 +96,117 @@ a:hover {
   opacity: 0.75;
 }
 
-#salutation, #problem, #about, #design, #flowchart, #expalanation, #casephoto, #policy, #qa, #flow, #price, #contact, #access{
-  padding:4rem 0;
-} 
+#salutation, #problem, #about, #design, #flowchart, #expalanation, #casephoto, #policy, #qa, #flow, #price, #contact, #access {
+  padding: 4rem 0;
+}
 
 
 /* ヘッダー */
 header {
   width: 100%;
-  height:6rem;
+  height: 6rem;
   background-color: #ffffff;
   color: #AD7F52;
   /* padding: 0.5rem 0 0.25rem 2rem; */
   display: flex;
+  position: fixed;
 }
 
 @media screen and (max-width: 768px) {
   header {
-  height:4rem;
-  font-size:14px ;
-}
+    height: 4rem;
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-header {
-  height:4rem;
-  padding:0 0 0 0.5rem;
-  font-size:4vw ;
-}
+  header {
+    height: 4rem;
+    padding: 0 0 0 0.5rem;
+    font-size: 4vw;
+  }
 }
 
-header img{
+header img {
   max-width: 14%;
   display: inline-block;
 }
 
-.clinicname{
+.clinicname {
   font-size: 22px;
 }
 
 @media screen and (max-width: 480px) {
-.clinicname{
-  font-size: 18px;
-}
+  .clinicname {
+    font-size: 18px;
+  }
 }
 
-.header_container, .header_namecontainer, .header_button{
+.header_container, .header_namecontainer, .header_button {
   display: flex;
   align-items: center;
 }
 
-.header_container{
-  width:100%;
-  justify-content: space-between; 
+.header_container {
+  width: 100%;
+  justify-content: space-between;
 }
 
-.header_namecontainer{
-  width:48%;
+.header_namecontainer {
+  width: 48%;
 }
 
 @media screen and (max-width: 768px) {
-.header_namecontainer{
-  width:90%;
-}
+  .header_namecontainer {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.header_namecontainer{
-  width:90%;
-}
+  .header_namecontainer {
+    width: 90%;
+  }
 }
 
-.header_button{
+.header_button {
   max-width: 30rem;
   justify-content: space-around;
 }
 
-.header_botton_content{
-  margin:0 0.5rem;
-  padding:0.5rem 2.5rem;
+.header_botton_content {
+  margin: 0 0.5rem;
+  padding: 0.5rem 2.5rem;
   background-color: #D5C3AA;
-  color:#ffffff;
+  color: #ffffff;
   border-radius: 20px;
   font-size: 20px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
-.header_botton_content{
-  padding:0.5rem 1rem;
-  font-size: 1rem;
+  .header_botton_content {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-.header_botton_content{
-display: none;
-}
+  .header_botton_content {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.header_botton_content{
-display: none;
-}
+  .header_botton_content {
+    display: none;
+  }
 }
 
 header h1 {
   margin: 0;
 }
 
-.header-wrap__nav{
+.header-wrap__nav {
   margin-right: 130px;
 }
 
@@ -219,34 +220,34 @@ header h1 {
 .h-open {
   position: absolute;
   z-index: 9999;
-  top:0;
+  top: 0;
   right: 0;
   cursor: pointer;
   width: 6rem;
-  height:6rem;
+  height: 6rem;
   background-color: #867666;
   text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
   .h-open {
-  width: 6rem;
-  height:6rem;
-}
+    width: 6rem;
+    height: 6rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
-.h-open {
-  width: 4rem;
-  height:4rem;
-}
+  .h-open {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.h-open {
-  width: 4rem;
-  height:4rem;
-}
+  .h-open {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 .h-open span {
@@ -261,60 +262,60 @@ header h1 {
 }
 
 @media screen and (max-width: 768px) {
-.h-open span {
-  left: 1.1rem;
-  height: 2.5px;
-  border-radius: 2px;
-}
+  .h-open span {
+    left: 1.1rem;
+    height: 2.5px;
+    border-radius: 2px;
+  }
 }
 
 .h-open span:nth-of-type(1) {
-  top:28%;
+  top: 28%;
 }
 
 .h-open span:nth-of-type(2) {
-  top:50%;
+  top: 50%;
 }
 
 
 .h-open span:nth-of-type(3) {
-  top:72%;
+  top: 72%;
 }
 
 @media screen and (max-width: 768px) {
-.h-open span:nth-of-type(1) {
-  top:1rem;
-}
+  .h-open span:nth-of-type(1) {
+    top: 1rem;
+  }
 
-.h-open span:nth-of-type(2) {
-  top:2rem;
-}
+  .h-open span:nth-of-type(2) {
+    top: 2rem;
+  }
 
 
-.h-open span:nth-of-type(3) {
-  top:3rem;
-}
+  .h-open span:nth-of-type(3) {
+    top: 3rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.h-open span {
-  left: 16px;
-  height: 2.5px;
-  border-radius: 2px;
-}
+  .h-open span {
+    left: 16px;
+    height: 2.5px;
+    border-radius: 2px;
+  }
 
-.h-open span:nth-of-type(1) {
-  top:17px;
-}
+  .h-open span:nth-of-type(1) {
+    top: 17px;
+  }
 
-.h-open span:nth-of-type(2) {
-  top:28px;
-}
+  .h-open span:nth-of-type(2) {
+    top: 28px;
+  }
 
 
-.h-open span:nth-of-type(3) {
-  top:39px;
-}
+  .h-open span:nth-of-type(3) {
+    top: 39px;
+  }
 }
 
 .h-open.active span:nth-of-type(1) {
@@ -340,35 +341,35 @@ header h1 {
 }
 
 @media screen and (max-width: 768px) {
-.h-open.active span:nth-of-type(1) {
-  top: 36px;
-  left: 20px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 50%;
-}
+  .h-open.active span:nth-of-type(1) {
+    top: 36px;
+    left: 20px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 50%;
+  }
 
-.h-open.active span:nth-of-type(3) {
-  top: 48px;
-  left: 20px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 50%;
-}
+  .h-open.active span:nth-of-type(3) {
+    top: 48px;
+    left: 20px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.h-open.active span:nth-of-type(1) {
-  top: 26px;
-  left: 16px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 50%;
-}
+  .h-open.active span:nth-of-type(1) {
+    top: 26px;
+    left: 16px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 50%;
+  }
 
-.h-open.active span:nth-of-type(3) {
-  top: 38px;
-  left: 16px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 50%;
-}
+  .h-open.active span:nth-of-type(3) {
+    top: 38px;
+    left: 16px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 50%;
+  }
 }
 
 #h-nav {
@@ -386,9 +387,12 @@ header h1 {
 #h-nav ul {
   position: absolute;
   z-index: 999;
+  /* top: 0%; */
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+  /* overflow-y: auto; */
+  height: 100%;
 }
 
 #h-nav li {
@@ -428,59 +432,61 @@ header h1 {
   background-image: url(../img/fv-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color:#fff;
+  color: #fff;
+  padding-top: 6rem;
+  ;
 }
 
 @media screen and (max-width: 480px) {
-#fv {
-  background-image: url(../img/fv-1-sp.png);
-}
+  #fv {
+    background-image: url(../img/fv-1-sp.png);
+  }
 }
 
-#fv .container{
+#fv .container {
   padding: 2.5rem 0;
 }
 
 @media screen and (max-width: 480px) {
-#fv .container{
-  padding: 4rem 0;
-}
+  #fv .container {
+    padding: 4rem 0;
+  }
 }
 
-#fv h1, h2, p{
+#fv h1, h2, p {
   text-align: left;
 }
 
-#fv h2{
+#fv h2 {
   font-size: 30px;
 }
 
 @media screen and (max-width: 480px) {
-#fv h2{
-  font-size: 20px;
-}
+  #fv h2 {
+    font-size: 20px;
+  }
 }
 
-#fv h2 span{
+#fv h2 span {
   font-size: 48px;
 }
 
 @media screen and (max-width: 768px) {
-#fv h2 span{
-  font-size: 44px;
-}
+  #fv h2 span {
+    font-size: 44px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-#fv h2 span{
-  font-size: 36px;
-}
+  #fv h2 span {
+    font-size: 36px;
+  }
 }
 
-#fv h1{
+#fv h1 {
   max-width: 20rem;
-  margin:2.5rem 0;
-  padding:1rem;
+  margin: 2.5rem 0;
+  padding: 1rem;
   text-align: center;
   background-color: #867666;
   border-radius: 50px;
@@ -488,77 +494,95 @@ header h1 {
 }
 
 @media screen and (max-width: 768px) {
-#fv h1{
-  font-size: 30px;
-}
+  #fv h1 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-#fv h1{
-  font-size: 26px;
-  padding:0.75rem;
-}
+  #fv h1 {
+    font-size: 26px;
+    padding: 0.75rem;
+  }
 }
 
-#fv p{
+#fv p {
   max-width: 32rem;
   text-align: left;
   font-size: 20px;
   line-height: 40px;
-  left:0;
-  color:#fff;
+  left: 0;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
-#fv p{
-  font-size: 22px;
-  line-height: 36px;
-}
+  #fv p {
+    font-size: 22px;
+    line-height: 36px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-#fv p{
-  font-size: 20px;
-}
+  #fv p {
+    font-size: 20px;
+  }
 }
 
 
 /* 院長挨拶 */
-#salutation .container{
+#salutation .container {
   display: flex;
   justify-content: space-between;
 }
 
-#salutation img, #salutation .salutation_textbox{
+@media screen and (max-width: 480px) {
+  #salutation .container {
+    display: block;
+  }
+
+  #salutation img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .salutation_textbox {
+    max-width: 100%;
+  }
+
+}
+
+
+#salutation img, #salutation .salutation_textbox {
   max-width: 48%;
 }
 
-.salutation_textbox{
-  margin:auto;
+.salutation_textbox {
+  margin: auto;
 }
 
-#salutation h2{
-  color:#867666;
+#salutation h2 {
+  color: #867666;
   font-size: 34px;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-#salutation h2{
-  font-size: 26px;
-}
+  #salutation h2 {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-#salutation h2{
-  font-size: 20px;
-  margin-bottom: 0;
-}
+  #salutation h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
 }
 
 
-.salutation_textbox_text{
+.salutation_textbox_text {
   margin-bottom: 1.5rem;
 }
 
@@ -568,65 +592,77 @@ header h1 {
 
 
 /* でも、自分で眉を描くと… */
-#problem .container{
+#problem .container {
   background-color: #7E7364;
-  color:#fff;
-  padding:2rem;
+  color: #fff;
+  padding: 2rem;
   border-radius: 15px;
   box-sizing: border-box;
 }
 
-#problem h2{
+#problem h2 {
   font-size: 34px;
   margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
-  #problem h2{
-  font-size: 30px;
+  #problem h2 {
+    font-size: 26px;
   }
 }
 
 @media screen and (max-width: 480px) {
-#problem h2{
-  font-size: 22px;
-  margin-bottom: 0.5rem;
-}
+  #problem h2 {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+  }
 }
 
-.problem_box{
+.problem_box {
   display: flex;
   justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
-  .problem_box{
-font-size: 14px;
+
+@media screen and (max-width: 1024px) {
+  .problem_box img {
+    width: 100%;
+    display: block;
+    margin: 2rem auto 0 auto;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  .problem_box {
+    font-size: 16px;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.problem_box{
-font-size: 12px;
-}
+  .problem_box {
+    font-size: 12px;
+  }
 }
 
-#problem ul li{
+#problem ul li {
   margin-top: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
-#problem img{
-  width:40%;
-  object-fit: cover;
-}
+  #problem img {
+    width: 40%;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 480px) {
-#problem img{
-  width:30%;
-  object-fit: cover;
-}
+  #problem img {
+    display: block;
+    width: 80%;
+    object-fit: cover;
+    margin-top: 1.5rem;
+  }
 }
 
 /* About 当クリニックの眉アートメイクについて */
@@ -634,7 +670,7 @@ font-size: 12px;
   background-color: #EAE2D6;
 }
 
-#about h4{
+#about h4 {
   text-align: center;
   color: #867666;
   font-size: 26px;
@@ -642,145 +678,145 @@ font-size: 12px;
 }
 
 @media screen and (max-width: 480px) {
-#about h4{
-  font-size: 22px;
-}
+  #about h4 {
+    font-size: 22px;
+  }
 }
 
-.about_box{
-  border:solid 1.75px #867666;
+.about_box {
+  border: solid 1.75px #867666;
   margin-bottom: 2rem;
   padding: 1.5rem;
   box-sizing: border-box;
 }
 
-.about_box_outline{
+.about_box_outline {
   display: flex;
 }
 
-.about_box_outline p{
+.about_box_outline p {
   display: inline-block;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background: #867666;
   text-align: center;
-  margin-left:1rem;
+  margin-left: 1rem;
   font-size: 26px;
   color: #fff;
-  line-height:1.2;
+  line-height: 1.2;
   font-weight: bold;
   flex-shrink: 0;
 }
 
-.about_box_outline span{
+.about_box_outline span {
   font-size: 14px;
   font-weight: bold;
 }
 
-.about_box_outline h6{
-  margin:auto 0 auto 1rem;
+.about_box_outline h6 {
+  margin: auto 0 auto 1rem;
   color: #867666;
   font-size: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .about_box_outline h6{
-  font-size: 22px;
-}
+  .about_box_outline h6 {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.about_box_outline h6{
-  font-size: 20px;
-}
+  .about_box_outline h6 {
+    font-size: 20px;
+  }
 }
 
-.about_box_inner{
+.about_box_inner {
   display: flex;
   justify-content: space-between;
-  margin:1rem;
+  margin: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .about_box_inner{
-  display: block;
-}
-}
-
-@media screen and (max-width: 480px) {
-.about_box_inner{
-  display: block;
-}
-}
-
-.about_box_inner p{
-  padding:0 1.25rem;
-  margin:auto;
-  line-height:2.0 ;
+  .about_box_inner {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.about_box_inner p{
-  padding:0 ;
-  line-height:2 ;
-}
+  .about_box_inner {
+    display: block;
+  }
 }
 
-.about_box_inner img{
+.about_box_inner p {
+  padding: 0 1.25rem;
+  margin: auto;
+  line-height: 2.0;
+}
+
+@media screen and (max-width: 480px) {
+  .about_box_inner p {
+    padding: 0;
+    line-height: 2;
+  }
+}
+
+.about_box_inner img {
   border-radius: 10px;
   object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
-.about_box_inner img{
+  .about_box_inner img {
     display: block;
-  margin:0.5rem auto 1rem;
-}
+    margin: 0.5rem auto 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.about_box_inner img{
-  width:40%;
-  display: block;
-  margin:0.5rem auto 1rem;
-}
+  .about_box_inner img {
+    width: 40%;
+    display: block;
+    margin: 0.5rem auto 1rem;
+  }
 
-.about_box_inner_reverse{
-  display: flex;
-  flex-direction: column-reverse;
-}
+  .about_box_inner_reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 768px) {
-.about_box_inner_reverse{
-  display: flex;
-  flex-direction: column-reverse;
-}
+  .about_box_inner_reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 
 /* Design 選べるデザイン */
-#design{
+#design {
   text-align: center;
   background-color: #EAE2D6;
 }
 
-#design ul{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, auto);
+#design ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
 }
 
-#design li{
-max-width: 90%;
+#design li {
+  max-width: 90%;
 }
 
-#design li:first-of-type{
+#design li:first-of-type {
   margin-bottom: 3rem;
 }
 
-#design li a{
+#design li a {
   display: block;
   width: 8rem;
   height: 8rem;
@@ -792,14 +828,14 @@ max-width: 90%;
   margin: 0 auto;
 }
 
-#design li a img{
+#design li a img {
   max-width: 6rem;
   max-height: 6rem;
   object-fit: cover;
   vertical-align: middle;
 }
 
-#design li h4{
+#design li h4 {
   margin: 1rem 0 0.5rem 0;
   text-align: center;
   color: #AD7F52;
@@ -807,435 +843,446 @@ max-width: 90%;
 }
 
 @media screen and (max-width: 768px) {
-  #design li h4{
-  font-size: 22px;
-}
+  #design li h4 {
+    font-size: 22px;
+  }
 }
 
-#design li p{
+#design li p {
   text-align: left;
 }
 
-.design_comment{
+.design_comment {
   display: inline-block;
   margin: 3rem auto 0 auto;
   background-color: #fff;
-  padding:1rem;
+  padding: 1rem;
 }
 
 
 /* Flowchart お悩み別おすすめ施術 */
 #flowchart {
-  width:100%;
+  width: 100%;
   text-align: center;
   background-color: #EAE2D6;
 }
 
-#flowchart .flowchart_recommendation{
+#flowchart .flowchart_recommendation {
   width: 100%;
   display: flex;
   margin-bottom: 2.5rem;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 #flowchart .flowchart_recommendation_1 {
-  width:33.3%;
+  width: 33.3%;
   /* display: flex; */
 }
 
 #flowchart .flowchart_recommendation_2 {
-  width:66.6%;
+  width: 66.6%;
   display: flex;
   justify-content: space-between;
 }
 
-#flowchart  li{
-margin:0 auto;
+#flowchart li {
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-#flowchart .flowchart_recommendation{
-  width: 100%;
-  display: block;
+  #flowchart .flowchart_recommendation {
+    width: 100%;
+    display: block;
+  }
+
+  #flowchart .flowchart_recommendation_1, .flowchart_recommendation_2 {
+    width: 100%;
+  }
+
+  #flowchart .flowchart_recommendation_1 {
+    margin: auto;
+  }
+
+  #flowchart .flowchart_recommendation_2 {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-#flowchart .flowchart_recommendation_1, .flowchart_recommendation_2 {
-  width:100%;
-}
-
-#flowchart .flowchart_recommendation_1 {
-  margin: auto;
-}
-
-#flowchart .flowchart_recommendation_2 {
-  width:100%;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-}
-
-#flowchart .flowchart_recommendation_1 li, .flowchart_recommendation_2 li{
+#flowchart .flowchart_recommendation_1 li, .flowchart_recommendation_2 li {
   width: 16rem;
-  padding:0.5rem 0;
+  padding: 0.5rem 0;
   background-color: #fff;
-  border:solid 1.75px #867666;
+  border: solid 1.75px #867666;
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-#flowchart .flowchart_recommendation_1 li, .flowchart_recommendation_2 li{
-  width: 12rem;
-}
+  #flowchart .flowchart_recommendation_1 li, .flowchart_recommendation_2 li {
+    width: 12rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-#flowchart .flowchart_recommendation_item1{
-margin: auto;
+  #flowchart .flowchart_recommendation_item1 {
+    margin: auto;
+  }
+
+  #flowchart .flowchart_recommendation_1 li, .flowchart_recommendation_2 li {
+    width: 10rem;
+  }
 }
 
-#flowchart .flowchart_recommendation_1 li, .flowchart_recommendation_2 li{
-  width: 10rem;
-}
-}
-
-.flowchart_comment{
+.flowchart_comment {
   text-align: center;
 }
 
-.flowchart_box{
+.flowchart_box {
   max-width: 800px;
-  margin:2.5rem auto 6rem auto;
+  margin: 2.5rem auto 6rem auto;
 }
 
 @media screen and (max-width: 768px) {
-.flowchart_box{
-  width:100% ;
-  margin:1.5rem auto 4rem auto;
-}
+  .flowchart_box {
+    width: 100%;
+    margin: 1.5rem auto 4rem auto;
+  }
 }
 
-.flowchart_box_inner{
+.flowchart_box_inner {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 480px) {
-.flowchart_box_inner{
-  display: block;
-}
+  .flowchart_box_inner {
+    display: block;
+  }
 }
 
-.flowchart_box_inner img{
+.flowchart_box_inner img {
   max-width: 300px;
   object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
-.flowchart_box_inner img{
-  width: 40%;
-}
+  .flowchart_box_inner img {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.flowchart_box_inner img{
-  width: 100%;
-  object-fit: cover;
-}
+  .flowchart_box_inner img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
-.flowchart_box_inner_text{
-  width:60%;
+.flowchart_box_inner_text {
+  width: 60%;
   text-align: left;
-  margin:auto 0;
+  margin: auto 0;
 }
 
 @media screen and (max-width: 768px) {
-.flowchart_box_inner_text{
-  width:55%;
-  text-align: left;
-  margin:0 auto;
-}
+  .flowchart_box_inner_text {
+    width: 55%;
+    text-align: left;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.flowchart_box_inner_text{
-  width:100%;
-  margin:0 auto;
-}
-}
-
-.flowchart_box_inner_text li{
-line-height: 1.8;
+  .flowchart_box_inner_text {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
-.flowchart_box_inner_text_caution{
+.flowchart_box_inner_text li {
+  line-height: 1.8;
+}
+
+.flowchart_box_inner_text_caution {
   margin-top: 1rem;
 }
 
-#flowchart h4{
+#flowchart h4 {
   display: inline-block;
   margin-top: 1.5rem;
-  padding:0.75rem 2rem;
+  padding: 0.75rem 2rem;
   color: #fff;
-  background-color:#E1B80D ;
+  background-color: #E1B80D;
   border-radius: 10px;
   font-size: 26px;
 }
 
 @media screen and (max-width: 768px) {
-#flowchart h4{
-  font-size: 20px;
-}
+  #flowchart h4 {
+    font-size: 20px;
+  }
 }
 
-.flowchart_menu{
+.flowchart_menu {
   margin-top: 4rem;
 }
 
-.flowchart_menu_box{
-  border:solid 1.75px #867666;
+.flowchart_menu_box {
+  border: solid 1.75px #867666;
   background-color: #fff;
   margin-bottom: 2rem;
   padding: 1.5rem;
   box-sizing: border-box;
 }
 
-.flowchart_menu_box h3{
- color: #AD7F52;
+.flowchart_menu_box h3 {
+  color: #AD7F52;
 }
 
-.flowchart_menu_box_mainimg{
-  width:60%;
-}
-
-@media screen and (max-width: 768px) {
-  .flowchart_menu_box_mainimg{
-  width:80%;
-}
+.flowchart_menu_box_mainimg {
+  width: 60%;
 }
 
 @media screen and (max-width: 768px) {
-.flowchart_menu_box_subimg{
-  width:90%;
-}
+  .flowchart_menu_box_mainimg {
+    width: 80%;
+  }
 }
 
-.flowchart_menu_box p{
-  width:60%;
+@media screen and (max-width: 768px) {
+  .flowchart_menu_box_subimg {
+    width: 90%;
+  }
+}
+
+.flowchart_menu_box p {
+  width: 60%;
   text-align: center;
-  margin:0.5rem auto;
+  margin: 0.5rem auto;
 }
 
 @media screen and (max-width: 768px) {
-  .flowchart_menu_box p{
-  width:80%;
-}
+  .flowchart_menu_box p {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.flowchart_menu_box p{
-  text-align:left;
-}
+  .flowchart_menu_box p {
+    text-align: left;
+  }
 }
 
-.flowchart_menu_box ul{
+.flowchart_menu_box ul {
   width: 60%;
   margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 768px) {
-.flowchart_menu_box ul{
-  width: 80%;
-}
-}
-
-.flowchart_menu_box ul li{
-flex: 1;
+  .flowchart_menu_box ul {
+    width: 80%;
+  }
 }
 
-.flowchart_menu_box_subimg{
+.flowchart_menu_box ul li {
+  flex: 1;
+}
+
+.flowchart_menu_box_subimg {
   width: 100%;
-height:12rem;
+  height: 12rem;
   display: block;
   object-fit: cover;
 }
 
+.tbsp-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .tbsp-only {
+    display: block
+  }
+}
+
+
 
 /* アートメイクの説明 */
-#expalanation{
+#expalanation {
   background-color: #EAE2D6;
 }
 
-.expalanation_sub{
+.expalanation_sub {
   width: 100%;
 }
 
-#expalanation figure{
+#expalanation figure {
   /* width:50%; */
   float: right;
 }
 
 @media screen and (max-width: 480px) {
-#expalanation figure{
-  width:50%;
-}
+  #expalanation figure {
+    width: 50%;
+  }
 }
 
-#expalanation figure img{
+#expalanation figure img {
   display: block;
   max-width: 100%;
   margin: auto;
 }
 
 @media screen and (max-width: 480px) {
-#expalanation figure img{
-  max-width: 40%;
-  text-align: center;
-}
+  #expalanation figure img {
+    max-width: 40%;
+    text-align: center;
+  }
 }
 
-#expalanation h3{
-  color:#AD7F52;
+#expalanation h3 {
+  color: #AD7F52;
   font-size: 30px;
   margin-bottom: 0.25rem;
 }
 
 @media screen and (max-width: 768px) {
-#expalanation h3{
-  font-size: 22px;
-}
+  #expalanation h3 {
+    font-size: 22px;
+  }
 }
 
-#expalanation .expalanation_sub h3:nth-of-type(2){
+#expalanation .expalanation_sub h3:nth-of-type(2) {
   margin-top: 2rem;
 }
 
-#expalanation p{
+#expalanation p {
   display: block;
   line-height: 1.8;
 }
 
 
 /* Case Photo 実際の症例写真 */
-#casephoto{
+#casephoto {
   text-align: center;
   background-color: #fff;
 }
 
-.casephoto_box{
+.casephoto_box {
   margin-bottom: 3.5rem;
   display: flex;
   justify-content: space-between;
 }
 
-.casephoto_item{
+.casephoto_item {
   margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 480px) {
-.casephoto_item{
-  width: 80%;
-  margin:0 auto;
+  .casephoto_item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .casephoto_box {
+    display: block;
+  }
 }
 
-.casephoto_box{
-  display: block;
-}
-}
-
-.casephoto_box_before{
+.casephoto_box_before {
   margin-bottom: 1rem;
 }
 
-.casephoto_box_before, .casephoto_box_after{
+.casephoto_box_before, .casephoto_box_after {
   width: 48%;
   background-color: #fff;
-  margin:0 0 2rem 0;
+  margin: 0 0 2rem 0;
   box-sizing: border-box;
   line-height: 0.75;
 }
 
 @media screen and (max-width: 768px) {
-.casephoto_box_before, .casephoto_box_after{
-  width: 42%;
-}
+  .casephoto_box_before, .casephoto_box_after {
+    width: 42%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.casephoto_box_before, .casephoto_box_after{
-  width: 80%;
-  margin:0 auto 1rem auto;
-}
+  .casephoto_box_before, .casephoto_box_after {
+    width: 80%;
+    margin: 0 auto 1rem auto;
+  }
 }
 
-.casephoto_box_before img, .casephoto_box_after img{
+.casephoto_box_before img, .casephoto_box_after img {
   width: 100%;
   max-height: 8rem;
   overflow: hidden;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
-.casephoto_box_before p, .casephoto_box_after p{
-  height:2.5rem;
+.casephoto_box_before p, .casephoto_box_after p {
+  height: 2.5rem;
   text-align: center;
-  border:solid 1.75px #867666;
+  border: solid 1.75px #867666;
   background-color: #fff;
-  margin:auto;
-  padding:0.75rem;
+  margin: auto;
+  padding: 0.75rem;
   box-sizing: border-box;
 }
 
-.casephoto_box_after p{
+.casephoto_box_after p {
   background-color: #AD7F52;
   color: #fff;
 }
 
-.casephoto_button{
+.casephoto_button {
   display: inline-block;
   margin: 0 auto;
-  padding:1rem 5rem;
+  padding: 1rem 5rem;
   text-align: center;
   background-color: #867666;
   color: #fff;
   border-radius: 50px;
-  font-size:24px ;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {
-  .casephoto_button{
-  font-size:20px ;
-}
+  .casephoto_button {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.casephoto_button{
-  padding:1rem 2.5rem;
-  font-size:20px ;
-}
+  .casephoto_button {
+    padding: 1rem 2.5rem;
+    font-size: 20px;
+  }
 }
 
 
 /* Policy  ○○○美容クリニックの３つのこだわり */
-#policy{
+#policy {
   background-color: #F7F7F7;
 }
 
-.policy_box{
+.policy_box {
   margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
-.policy_box{
-  display: block;
-}
+  .policy_box {
+    display: block;
+  }
 }
 
 /* .policy_box:nth-of-type(2){
@@ -1243,148 +1290,159 @@ flex-direction: row-reverse;
 } */
 
 
-#policy h4{
+#policy h4 {
   font-size: 30px;
   margin-bottom: 0.75rem;
-  color:#867666;
+  color: #867666;
 }
 
 @media screen and (max-width: 768px) {
-#policy h4{
-  font-size: 24px;
-}
+  #policy h4 {
+    font-size: 24px;
+  }
 }
 
-.policy_box_textblock{
-  margin:auto 0;
+.policy_box_textblock {
+  margin: auto 0;
   padding: 0 1rem;
 }
 
 #policy img {
-  border-radius:  10px;;
+  border-radius: 10px;
+  ;
 }
 
 @media screen and (max-width: 768px) {
-#policy img {
-display: block;
-margin: 1rem auto auto auto;
-}
+  #policy img {
+    display: block;
+    margin: 1rem auto auto auto;
+  }
 
-#policy .policy_box_reverse{
-  display: flex;
-  flex-direction: column-reverse;
-}
+  #policy .policy_box_reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 768px) {
- #policy .policy_box_reverse{
-  display: flex;
-  flex-direction: column-reverse;
+  #policy .policy_box_reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
-} 
 
 
 
 /* Q&A  アートメイクの不安にお答えします */
-#qa{
+#qa {
   background-color: #fff;
 }
 
-#qa label{
-  color:#fff;
+#qa label {
+  color: #fff;
 }
 
 .toggle {
-	display: none;
+  display: none;
 }
 
 .Label {
-  height:4.5rem;
-  line-height:4.5rem;;
-	padding: 0.5rem;
-	display: block;
-	background:#D5C3AA;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0.5rem;
+  display: block;
+  background: #D5C3AA;
   text-align: left;
   align-items: center;
-  padding:0.5rem 2rem;
-  border:solid 1.5px #867666;
+  padding: 0.5rem 2rem;
+  border: solid 1.5px #867666;
   font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {
   .Label {
-  font-size: 20px;
-}
+    font-size: 16px;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0.5rem;
+  }
 }
 
-.Label::before{
-	content:"";
-	width: 1rem;
-	height: 1rem;
-	border-top: 2px solid #fff;
-	border-right: 2px solid #fff;
-	-webkit-transform: rotate(45deg);
-	position: absolute;
-	top:calc( 50% - 0.75rem );
-	right: 4%;
-	transform: rotate(135deg);
+.Label::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  top: calc(50% - 0.75rem);
+  right: 4%;
+  transform: rotate(135deg);
 }
+
 .Label,
 .content {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	transform: translateZ(0);
-	transition: all 0.3s;
-}
-.content {
-	height: 0;
-	margin-bottom:1rem;
-	padding:0 1rem;
-	overflow: hidden;
-  border:solid 1.5px #867666;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s;
 }
 
-.content p {
-text-align: left;
-font-size: 24px;
+.content {
+  height: 0;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  overflow: hidden;
+  border: solid 1.5px #867666;
 }
 
 @media screen and (max-width: 768px) {
-.content p {
-font-size: 20px;
-}
+  .content {}
 }
 
-.toggle:checked + .Label + .content {
-	height: auto;
-	padding:20px ;
-	transition: all .3s;
+.content p {
+  text-align: left;
+  font-size: 24px;
 }
-.toggle:checked + .Label::before {
-	transform: rotate(-45deg) !important;
+
+@media screen and (max-width: 768px) {
+  .content p {
+    font-size: 16px;
+  }
+}
+
+.toggle:checked+.Label+.content {
+  height: auto;
+  padding: 20px;
+  transition: all .3s;
+}
+
+.toggle:checked+.Label::before {
+  transform: rotate(-45deg) !important;
 }
 
 
 /* Flow　施術の流れ */
-#flow{
+#flow {
   background-color: #EAE2D6;
 }
 
-.flow_box{
+.flow_box {
   display: flex;
   justify-content: space-between;
-  margin-bottom:1rem ;
-	background:#fff;
+  margin-bottom: 1rem;
+  background: #fff;
   text-align: left;
-  padding:2rem;
-  border:solid 1.5px #867666;
+  padding: 2rem;
+  border: solid 1.5px #867666;
   box-sizing: border-box;
 }
 
-.flow_box_step{
+.flow_box_step {
   width: 15%;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
   /* text-align: center; */
   justify-content: center;
   color: #36454F;
@@ -1392,75 +1450,88 @@ font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
-.flow_box_step{
-  width: 20%;
-  font-size: 22px;
-}
+  .flow_box_step {
+    width: 12%;
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.flow_box_step{
-  width: 25%;
-}
+  .flow_box_step {
+    width: 25%;
+  }
 }
 
-.flow_box_step span{
-font-size: 34px;
-font-weight: bolder;
+.flow_box_step span {
+  font-size: 34px;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 768px) {
-.flow_box_step span{
-font-size: 30px;
-}
-}
-
-.flow_box_textblock{
-  width:85%;
+  .flow_box_step span {
+    font-size: 30px;
+  }
 }
 
-.flow_box_textblock h6{
+.flow_box_textblock {
+  width: 85%;
+}
+
+@media screen and (max-width: 768px) {
+  .flow_box_textblock {
+    width: 80%;
+  }
+}
+
+.flow_box_textblock h6 {
   color: #867666;
   margin-bottom: 0.5rem;
   font-size: 30px;
 }
 
 @media screen and (max-width: 768px) {
-.flow_box_textblock h6{
-  font-size: 22px;
-}
+  .flow_box_textblock h6 {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.flow_box_textblock h6{
-  font-size: 18px;
-}
+  .flow_box_textblock h6 {
+    font-size: 18px;
+  }
 }
 
 
 /* Price  料金表 */
-#price{
-  background-color:#fff;
+#price {
+  background-color: #fff;
   font-size: 22px;
 }
 
-@media screen and (max-width: 768px) {
-  #price{
-  background-color:#fff;
-  font-size: 18px;
-}
+#price table {
+  font-size: clamp(0.875rem, 0.446rem + 2.14vw, 1.625rem)
 }
 
-#price h4{
+
+
+@media screen and (max-width: 768px) {
+  #price {
+    background-color: #fff;
+    /* font-size: 18px; */
+    font-size: clamp(0.875rem, 0.608rem + 1.33vw, 1.625rem);
+  }
+}
+
+#price h4 {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-#price th, td{
-  padding:0.5rem 1rem;
+#price th, td {
+  padding: 0.5rem 1rem;
 }
 
-#price table{
+#price table {
   width: 80%;
   margin: 0 auto 2rem auto;
   border-collapse: collapse;
@@ -1469,106 +1540,112 @@ font-size: 30px;
 }
 
 @media screen and (max-width: 768px) {
-#price table:last-of-type{
-  margin: 0 auto 0.25rem auto;
-}
+#price tr{
+  display: block;
 }
 
-.pricelist-1{
+  #price table:last-of-type {
+    margin: 0 auto 0.25rem auto;
+  }
+}
+
+.pricelist-1 {
   border: solid 1px #867666;
 }
 
-.pricelist-1_price{
-  width:33%;
+.pricelist-1_price {
+  width: 33%;
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-.pricelist-1_price{
-  width:35%;
-}
+  .pricelist-1_price {
+    width: 35%;
+  }
 }
 
-.pricelist-2, .listappear{
+.pricelist-2, .listappear {
   border-bottom: solid 1px #867666;
 }
 
-.pricelist-2_item{
-  background-color:rgba(102,102,102,0.1) ;
-  color:#867666
+.pricelist-2_item {
+  background-color: rgba(102, 102, 102, 0.1);
+  color: #867666
 }
 
-.price_attention{
+.price_attention {
   width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-.price_attention{
-font-size: 14px;
-}
+  .price_attention {
+    font-size: 14px;
+  }
 }
 
-.price_attention h7{
+.price_attention h7 {
   font-size: 24px;
   font-weight: bolder;
 }
 
 @media screen and (max-width: 768px) {
-  .price_attention h7{
-  font-size: 20px;
-}
+  .price_attention h7 {
+    font-size: 20px;
+  }
 }
 
-.price_attention_space{
+.price_attention_space {
   display: block;
   margin-top: 1.5rem;
 }
 
 
 /* 問い合わせ */
-#contact{
+#contact {
   background-color: #F7F7F7;
 }
 
-#contact .container{
-  width:90%;
+#contact .container {
+  width: 80%;
+  /* width: 90%; */
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
-#contact .container{
-  display: block;
-  text-align: center;
-}
+  #contact .container {
+    display: block;
+    text-align: center;
+  }
 }
 
-.contact_subcontainer{
-  width:40%;
+.contact_subcontainer {
+  width: 40%;
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-.contact_subcontainer{
-  width:100%;
-  text-align: center;
-}
+  .contact_subcontainer {
+    width: 100%;
+    text-align: center;
+  }
 }
 
-.contact_subcontainer_phonenumber{
+.contact_subcontainer_phonenumber {
   display: flex;
   justify-content: center;
 }
 
-#contact img{
+#contact img {
   width: 16%;
-  object-fit: cover;
+  /* object-fit: contain; */
 }
 
-.phonenumber{
-  font-size: 1.75em;
-  margin:auto 1rem;
+.phonenumber {
+  font-size: clamp(0.875rem, 0.386rem + 2.44vw, 2.25rem);
+  /* font-size: 1.75em; */
+  margin: auto 1rem;
 }
 
 /* @media screen and (max-width: 1024px) {
@@ -1577,168 +1654,177 @@ font-size: 14px;
 }
 } */
 
-#contact h4{
+#contact h4 {
   margin-bottom: 1rem;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
+  font-size: clamp(0.875rem, 0.431rem + 2.22vw, 2.125rem);
 }
 
-#contact h7{
+#contact h7 {
+  display: block;
   color: #AD7F52;
-  border:#AD7F52 solid 1.5px;
+  border: #AD7F52 solid 1.5px;
   border-radius: 50px;
-  margin:0 0.75rem;
-  padding:0.5rem 1.5rem;
-  font-size: 1.25em;
-clamp(1rem, 0.9rem + 0.5vw, 1.5rem)
+  margin: 0.75rem;
+  /* padding: 0.5rem 1.5rem; */
+  padding: 2.5% 7.5%;
+  /* font-size: 1.25em; */
+  font-size: clamp(0.875rem, 0.608rem + 1.33vw, 1.625rem);
 }
 
 @media screen and (max-width: 1024px) {
-#contact h7{
-  font-size: 1.5rem;
-  padding:0.5rem 1rem;
-}
+  #contact h7 {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
-#contact h7{
-  width:20%;
-  display: inline-block;
-  font-size: 1em;
-  margin:0.75rem 0.5rem;
-  padding:0.5rem 1rem;
-}
+  #contact h7 {
+    width: 25%;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.75rem 0.5rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
-#contact a{
-  max-width:58%;
+#contact a {
+  max-width: 50%;
   display: inline-block;
   text-decoration: none;
   margin: auto 0;
 }
 
-@media screen and (max-width: 1024px) {
-#contact a{
-  max-width:54%;
-}
+/* @media screen and (max-width: 1024px) {
+  #contact a {
+    max-width: 54%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-#contact a{
-  max-width:50%;
-}
-}
+  #contact a {
+    max-width: 50%;
+  }
+} */
 
-.contact_button{
-  max-height:3rem;
+.contact_button {
+  /* max-height: 3rem; */
   background-color: #E1B80D;
-  margin:auto 0;
-  padding:1rem 2rem;
+  margin: auto 0;
+  padding: 1rem 2rem;
   text-align: center;
   color: #fff;
   border-radius: 50px;
-  font-size: 1.25em;
+  font-size: 1.2em;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
-.contact_button{
-  max-height:6rem;
-}
+  .contact_button {
+    width: 100%;
+    max-height: 6rem;
+    /* display: block;
+    margin: 0 auto; */
+  }
 }
 
 @media screen and (max-width: 768px) {
-.contact_button{
-  max-height:9rem;
-}
+  .contact_button {
+    width: 100%;
+    max-height: 9rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.contact_button{
-  max-height:6rem;
-  margin-top:1.25rem;
-  padding:0.5rem 2rem;
-  font-size: 16px;
-}
+  .contact_button {
+    width: 100%;
+    max-height: 6rem;
+    margin-top: 1.25rem;
+    font-size: 16px;
+  }
 }
 
 
 /* Access  アクセス */
-#access{
-  background-color:#fff;
+#access {
+  background-color: #fff;
 }
 
-#access dl{
-  width:80%;
+#access dl {
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {
-  #access dl{
-  width:80%;
+  #access dl {
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #access dl{
-  width:100%;
+  #access dl {
+    width: 100%;
   }
 }
 
-#access dt{
+#access dt {
   width: 35%;
   padding: 0 0 1rem 2rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #867666;
-  display: flex; 
-  align-items: center; 
-  justify-content: left; 
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 @media screen and (max-width: 1024px) {
-  #access dt{
-  width:30%;
+  #access dt {
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #access dt{
-  width:29%;
-  padding: 0 0 1rem 1rem;
+  #access dt {
+    width: 29%;
+    padding: 0 0 1rem 1rem;
   }
 
-  #access dt:first-of-type{
-  width:40%;
-    }
+  #access dt:first-of-type {
+    width: 40%;
+  }
 }
 
-#access dd{
+#access dd {
   width: 60%;
   padding: 0 0 1rem 0.5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #867666;
-  display: flex; 
-  align-items: center; 
-  justify-content: left; 
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 @media screen and (max-width: 480px) {
-#access dd{
-  width: 60%;
-}
+  #access dd {
+    width: 60%;
+  }
 }
 
-#access dd:first-of-type{
+#access dd:first-of-type {
   width: 60%;
 }
 
 @media screen and (max-width: 768px) {
-    #access dt:first-of-type{
-  width: 50%;
-}
-  #access dd:first-of-type{
-  width: 40%;
-}
+  #access dt:first-of-type {
+    width: 50%;
+  }
+
+  #access dd:first-of-type {
+    width: 40%;
+  }
 }
 
 /* @media screen and (max-width: 1024px) {
@@ -1747,16 +1833,16 @@ clamp(1rem, 0.9rem + 0.5vw, 1.5rem)
 }
 } */
 
-.map{
-  width:80%;
+.map {
+  width: 80%;
   display: block;
   margin: 2rem auto 0 auto;
 }
 
 @media screen and (max-width: 480px) {
-.map{
-  width:100%;
-}
+  .map {
+    width: 100%;
+  }
 }
 
 footer {
@@ -1765,7 +1851,7 @@ footer {
   font-size: 0.8em;
 }
 
-footer p{
+footer p {
   color: #fff;
   text-align: center;
 }
