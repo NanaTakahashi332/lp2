@@ -6,12 +6,12 @@ body {
   margin: 0;
   background-color: #f4f4f4;
   color: #333;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -33,12 +33,12 @@ body {
 
 @media screen and (max-width: 1024px) {
   .container {
-    max-width: 900px;
-    width: 100%;
+    /* max-width: 900px; */
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .container {
     max-width: 680px;
     width: 90%;
@@ -50,7 +50,7 @@ body {
     max-width: 380px;
     width: 90%;
   }
-}
+} */
 
 .heading, .heading_text {
   text-align: center;
@@ -110,6 +110,7 @@ header {
   /* padding: 0.5rem 0 0.25rem 2rem; */
   display: flex;
   position: fixed;
+  z-index:900;
 }
 
 @media screen and (max-width: 768px) {
@@ -388,7 +389,7 @@ header h1 {
   position: absolute;
   z-index: 999;
   /* top: 0%; */
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   /* overflow-y: auto; */
@@ -549,12 +550,16 @@ header h1 {
   .salutation_textbox {
     max-width: 100%;
   }
-
 }
 
-
 #salutation img, #salutation .salutation_textbox {
-  max-width: 48%;
+  width: 48%;
+}
+
+@media screen and (max-width: 480px) {
+#salutation img, #salutation .salutation_textbox {
+  width: 100%;
+}
 }
 
 .salutation_textbox {
@@ -580,7 +585,6 @@ header h1 {
     margin-bottom: 0;
   }
 }
-
 
 .salutation_textbox_text {
   margin-bottom: 1.5rem;
@@ -619,17 +623,9 @@ header h1 {
 }
 
 .problem_box {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-}
-
-
-@media screen and (max-width: 1024px) {
-  .problem_box img {
-    width: 100%;
-    display: block;
-    margin: 2rem auto 0 auto;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -645,25 +641,41 @@ header h1 {
   }
 }
 
+#problem ul{
+  width:50%;
+}
+
+  @media screen and (max-width: 768px) {
+#problem ul{
+  width:100%;
+}
+}
+
 #problem ul li {
   margin-top: 1.25rem;
 }
 
-@media screen and (max-width: 768px) {
+#problem img {
+    width:50%;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
   #problem img {
-    width: 40%;
+    width: 50%;
+    display: block;
+    margin: 2rem auto 0 auto;
     object-fit: cover;
   }
 }
 
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
   #problem img {
-    display: block;
-    width: 80%;
-    object-fit: cover;
-    margin-top: 1.5rem;
+    width: 100%;
   }
 }
+
+
 
 /* About 当クリニックの眉アートメイクについて */
 #about {
@@ -868,71 +880,27 @@ header h1 {
 }
 
 #flowchart .flowchart_recommendation {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 2.5rem;
   align-items: flex-start;
 }
 
-#flowchart .flowchart_recommendation_1 {
-  width: 33.3%;
-  /* display: flex; */
-}
-
-#flowchart .flowchart_recommendation_2 {
-  width: 66.6%;
-  display: flex;
-  justify-content: space-between;
-}
-
-#flowchart li {
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  #flowchart .flowchart_recommendation {
-    width: 100%;
-    display: block;
-  }
-
-  #flowchart .flowchart_recommendation_1, .flowchart_recommendation_2 {
-    width: 100%;
-  }
-
-  #flowchart .flowchart_recommendation_1 {
-    margin: auto;
-  }
-
-  #flowchart .flowchart_recommendation_2 {
-    width: 100%;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-#flowchart .flowchart_recommendation_1 li, .flowchart_recommendation_2 li {
-  width: 16rem;
+#flowchart .flowchart_recommendation li {
+  width:30%;
   padding: 0.5rem 0;
   background-color: #fff;
   border: solid 1.75px #867666;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
-  #flowchart .flowchart_recommendation_1 li, .flowchart_recommendation_2 li {
-    width: 12rem;
-  }
+#flowchart .flowchart_recommendation li {
+  font-size: 0.8rem;
 }
-
-@media screen and (max-width: 480px) {
-  #flowchart .flowchart_recommendation_item1 {
-    margin: auto;
-  }
-
-  #flowchart .flowchart_recommendation_1 li, .flowchart_recommendation_2 li {
-    width: 10rem;
-  }
 }
 
 .flowchart_comment {
@@ -963,14 +931,8 @@ header h1 {
 }
 
 .flowchart_box_inner img {
-  max-width: 300px;
+  width:40%;
   object-fit: contain;
-}
-
-@media screen and (max-width: 768px) {
-  .flowchart_box_inner img {
-    width: 40%;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -981,17 +943,9 @@ header h1 {
 }
 
 .flowchart_box_inner_text {
-  width: 60%;
+  width: 55%;
   text-align: left;
   margin: auto 0;
-}
-
-@media screen and (max-width: 768px) {
-  .flowchart_box_inner_text {
-    width: 55%;
-    text-align: left;
-    margin: 0 auto;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1021,7 +975,7 @@ header h1 {
 
 @media screen and (max-width: 768px) {
   #flowchart h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -1117,6 +1071,7 @@ header h1 {
 /* アートメイクの説明 */
 #expalanation {
   background-color: #EAE2D6;
+  padding-top: 0;
 }
 
 .expalanation_sub {
@@ -1149,13 +1104,13 @@ header h1 {
 
 #expalanation h3 {
   color: #AD7F52;
-  font-size: 30px;
+  font-size: 1.5rem;
   margin-bottom: 0.25rem;
 }
 
 @media screen and (max-width: 768px) {
   #expalanation h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -1256,7 +1211,7 @@ header h1 {
 
 @media screen and (max-width: 768px) {
   .casephoto_button {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -1291,14 +1246,14 @@ flex-direction: row-reverse;
 
 
 #policy h4 {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 0.75rem;
   color: #867666;
 }
 
 @media screen and (max-width: 768px) {
   #policy h4 {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -1336,6 +1291,7 @@ flex-direction: row-reverse;
 /* Q&A  アートメイクの不安にお答えします */
 #qa {
   background-color: #fff;
+  font-size: 1.2rem;
 }
 
 #qa label {
@@ -1356,15 +1312,14 @@ flex-direction: row-reverse;
   align-items: center;
   padding: 0.5rem 2rem;
   border: solid 1.5px #867666;
-  font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {
   .Label {
-    font-size: 16px;
-    height: 2.5rem;
-    line-height: 2.5rem;
+    height: 2rem;
+    line-height: 2rem;
     padding: 0.5rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -1392,35 +1347,33 @@ flex-direction: row-reverse;
 .content {
   height: 0;
   margin-bottom: 1rem;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   overflow: hidden;
   border: solid 1.5px #867666;
 }
 
-@media screen and (max-width: 768px) {
-  .content {}
-}
-
 .content p {
   text-align: left;
-  font-size: 24px;
+  padding: 0 1rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
   .content p {
-    font-size: 16px;
+  font-size: 0.75rem;
   }
 }
 
 .toggle:checked+.Label+.content {
   height: auto;
-  padding: 20px;
+  padding:1rem 0;
   transition: all .3s;
 }
 
 .toggle:checked+.Label::before {
   transform: rotate(-45deg) !important;
 }
+
 
 
 /* Flow　施術の流れ */
@@ -1462,15 +1415,15 @@ flex-direction: row-reverse;
   }
 }
 
-.flow_box_step span {
-  font-size: 34px;
-  font-weight: bolder;
+.flow_box_step span p {
+  text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .flow_box_step span {
-    font-size: 30px;
-  }
+.flow_box_step span {
+  font-size: 2rem;
+  font-weight: bolder;
+  display: block;
+  text-align: center;
 }
 
 .flow_box_textblock {
@@ -1486,7 +1439,7 @@ flex-direction: row-reverse;
 .flow_box_textblock h6 {
   color: #867666;
   margin-bottom: 0.5rem;
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1505,14 +1458,18 @@ flex-direction: row-reverse;
 /* Price  料金表 */
 #price {
   background-color: #fff;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
-#price table {
+  @media screen and (max-width: 1024px) {
+#price {
+  font-size: 0.75rem;
+}
+}
+
+/* #price table {
   font-size: clamp(0.875rem, 0.446rem + 2.14vw, 1.625rem)
-}
-
-
+} */
 
 @media screen and (max-width: 768px) {
   #price {
@@ -1540,10 +1497,6 @@ flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 768px) {
-#price tr{
-  display: block;
-}
-
   #price table:last-of-type {
     margin: 0 auto 0.25rem auto;
   }
@@ -1585,7 +1538,7 @@ flex-direction: row-reverse;
 }
 
 .price_attention h7 {
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: bolder;
 }
 
@@ -1594,6 +1547,11 @@ flex-direction: row-reverse;
     font-size: 20px;
   }
 }
+
+.price_attention p{
+  font-size: 0.9rem;
+}
+
 
 .price_attention_space {
   display: block;
