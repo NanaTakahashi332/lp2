@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  width:90%;
+  width:85%;
   margin: 0 auto;
 }
 
@@ -112,8 +112,9 @@ header img {
 }
 
 .clinicname {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
+
 
 @media screen and (max-width: 480px) {
   .clinicname {
@@ -132,16 +133,10 @@ header img {
 }
 
 .header_namecontainer {
-  width: 30%;
+  width: 55%;
 }
 
 @media screen and (max-width: 768px) {
-  .header_namecontainer {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .header_namecontainer {
     width: 90%;
   }
@@ -346,12 +341,19 @@ header h1 {
   z-index: 999;
   top: 0;
   right: -120%;
-  width: 50%;
+  width:50%;
   height: 100vh;
   background-color: #fff;
   box-shadow: 0px 10px 10px rgb(0 0 0 / 20%);
   transition: all 0.6s;
 }
+
+@media screen and (max-width: 768px) {
+#h-nav {
+  width: 65%;
+}
+}
+
 
 #h-nav ul {
   position: absolute;
@@ -382,7 +384,8 @@ header h1 {
 #h-nav li a {
   color: #333;
   display: block;
-  font-size: clamp(0.9rem, 0.773rem + 0.64vw, 1.25rem);
+  font-size: 0.95rem;
+  /* font-size: clamp(0.9rem, 0.773rem + 0.64vw, 1.25rem); */
   font-weight: 400;
   text-decoration: none;
 }
@@ -429,6 +432,12 @@ header h1 {
   font-size: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  #fv h2 {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #fv h2 {
     font-size: 20px;
@@ -441,7 +450,7 @@ header h1 {
 
 @media screen and (max-width: 768px) {
   #fv h2 span {
-    font-size: 44px;
+    font-size: 38px;
   }
 }
 
@@ -463,14 +472,16 @@ header h1 {
 
 @media screen and (max-width: 768px) {
   #fv h1 {
-    font-size: 30px;
+    max-width: 16rem;
+    font-size: 24px;
+    padding: 0.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   #fv h1 {
-    font-size: 26px;
-    padding: 0.75rem;
+    max-width: 14rem;
+    font-size: 20px;
   }
 }
 
@@ -485,14 +496,14 @@ header h1 {
 
 @media screen and (max-width: 768px) {
   #fv p {
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 34px;
   }
 }
 
 @media screen and (max-width: 480px) {
   #fv p {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -1024,6 +1035,12 @@ header h1 {
   flex: 1;
 }
 
+.image-container{
+  width:47.5%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
 .flowchart_menu_box_subimg {
   width: 100%;
   height: 12rem;
@@ -1105,6 +1122,13 @@ header h1 {
   background-color: #fff;
 }
 
+/* @media screen and (max-width: 768px) {
+#casephoto .container {
+width: 70%;
+}
+} */
+
+
 .casephoto_box {
   margin-bottom: 3.5rem;
   display: flex;
@@ -1140,7 +1164,7 @@ header h1 {
 
 @media screen and (max-width: 768px) {
   .casephoto_box_before, .casephoto_box_after {
-    width: 42%;
+    width: 47.5%;
   }
 }
 
@@ -1464,6 +1488,7 @@ flex-direction: row-reverse;
 #price h4 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 #price th, td {
@@ -1538,9 +1563,15 @@ flex-direction: row-reverse;
   }
 } */
 
-.price_attention h7,price_attention_space h7 {
-  font-size: 0.8rem;
+.price_attention h7 ,price_attention_space h7 {
+  font-size: 1rem;
   font-weight: bolder;
+}
+
+@media screen and (max-width: 480px) {
+.price_attention h7 ,price_attention_space h7 {
+  font-size:  0.85rem;
+}
 }
 
 .price_attention_space {
@@ -1549,7 +1580,13 @@ flex-direction: row-reverse;
 }
 
 #price p{
-    font-size: 0.7rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 480px) {
+#price p{
+  font-size: 0.75rem;
+}
 }
 
 
@@ -1619,12 +1656,14 @@ flex-direction: row-reverse;
 }
 
 .contact_subcontainer_sub{
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 #contact h7 {
-  width:35%;
+  width:30%;
+  display: block;
   /* display: inline-block; */
   color: #AD7F52;
   border: #AD7F52 solid 1.5px;
@@ -1643,10 +1682,14 @@ flex-direction: row-reverse;
 
 @media screen and (max-width: 768px) {
   #contact h7 {
-    display: inline-block;
     font-size: 0.75rem;
-    margin:  0.5rem;
     padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contact h7 {
+  width:35%;
   }
 }
 
@@ -1673,28 +1716,33 @@ flex-direction: row-reverse;
 
 @media screen and (max-width: 1024px) {
   .contact_button {
-    width: 100%;
-    max-height: 6rem;
-    /* display: block;
-    margin: 0 auto; */
+  font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .contact_button {
-    width: 100%;
-    max-height: 9rem;
+      font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .contact_button {
-    width: 100%;
-    max-height: 6rem;
     margin-top: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
+
+.sp-only {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .sp-only {
+    display: block
+  }
+}
+
 
 
 /* Access  アクセス */
