@@ -26,31 +26,9 @@ body {
 }
 
 .container {
-  max-width: 1100px;
-  /* width:90%; */
+  width:90%;
   margin: 0 auto;
 }
-
-@media screen and (max-width: 1024px) {
-  .container {
-    /* max-width: 900px; */
-    width: 90%;
-  }
-}
-
-/* @media screen and (max-width: 768px) {
-  .container {
-    max-width: 680px;
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 380px;
-    width: 90%;
-  }
-} */
 
 .heading, .heading_text {
   text-align: center;
@@ -134,12 +112,12 @@ header img {
 }
 
 .clinicname {
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 480px) {
   .clinicname {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 }
 
@@ -154,7 +132,7 @@ header img {
 }
 
 .header_namecontainer {
-  width: 48%;
+  width: 30%;
 }
 
 @media screen and (max-width: 768px) {
@@ -224,8 +202,10 @@ header h1 {
   top: 0;
   right: 0;
   cursor: pointer;
+  aspect-ratio:1/1;
   width: 6rem;
-  height: 6rem;
+  height: auto;
+  /* height:6rem; */
   background-color: #867666;
   text-align: center;
 }
@@ -238,13 +218,6 @@ header h1 {
 }
 
 @media screen and (max-width: 768px) {
-  .h-open {
-    width: 4rem;
-    height: 4rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .h-open {
     width: 4rem;
     height: 4rem;
@@ -264,7 +237,7 @@ header h1 {
 
 @media screen and (max-width: 768px) {
   .h-open span {
-    left: 1.1rem;
+    left:28%;
     height: 2.5px;
     border-radius: 2px;
   }
@@ -283,7 +256,7 @@ header h1 {
   top: 72%;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .h-open span:nth-of-type(1) {
     top: 1rem;
   }
@@ -296,9 +269,9 @@ header h1 {
   .h-open span:nth-of-type(3) {
     top: 3rem;
   }
-}
+} */
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .h-open span {
     left: 16px;
     height: 2.5px;
@@ -317,11 +290,10 @@ header h1 {
   .h-open span:nth-of-type(3) {
     top: 39px;
   }
-}
+} */
 
 .h-open.active span:nth-of-type(1) {
-  /* top: 48px;
-  left: 24px; */
+  left: 24px; 
   top: 40px;
   left: 24px;
   transform: translateY(6px) rotate(-45deg);
@@ -343,35 +315,31 @@ header h1 {
 
 @media screen and (max-width: 768px) {
   .h-open.active span:nth-of-type(1) {
-    top: 36px;
-    left: 20px;
+    top: 40%;
+    left: 27.5%;
     transform: translateY(6px) rotate(-45deg);
     width: 50%;
   }
 
   .h-open.active span:nth-of-type(3) {
-    top: 48px;
-    left: 20px;
+    top: 58%;
+    left: 27.5%;
     transform: translateY(-6px) rotate(45deg);
     width: 50%;
   }
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 768px) {
   .h-open.active span:nth-of-type(1) {
-    top: 26px;
-    left: 16px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 50%;
+    left: 24%;
   }
 
   .h-open.active span:nth-of-type(3) {
-    top: 38px;
-    left: 16px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 50%;
+    left: 24%;
   }
-}
+} */
+
+
 
 #h-nav {
   position: fixed;
@@ -388,12 +356,11 @@ header h1 {
 #h-nav ul {
   position: absolute;
   z-index: 999;
-  /* top: 0%; */
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   /* overflow-y: auto; */
-  height: 100%;
+  /* height: 100%; */
 }
 
 #h-nav li {
@@ -812,6 +779,7 @@ header h1 {
 #design {
   text-align: center;
   background-color: #EAE2D6;
+  padding-top: 0;
 }
 
 #design ul {
@@ -902,6 +870,13 @@ header h1 {
   font-size: 0.8rem;
 }
 }
+
+@media screen and (max-width: 768px) {
+#flowchart .flowchart_recommendation li {
+  font-size: 0.5rem;
+}
+}
+
 
 .flowchart_comment {
   text-align: center;
@@ -1013,7 +988,7 @@ header h1 {
 
 .flowchart_menu_box p {
   width: 60%;
-  text-align: center;
+  text-align: left;
   margin: 0.5rem auto;
 }
 
@@ -1178,7 +1153,7 @@ header h1 {
 
 .casephoto_box_before img, .casephoto_box_after img {
   width: 100%;
-  max-height: 8rem;
+  height: 8rem;
   overflow: hidden;
   object-fit: cover;
 }
@@ -1392,8 +1367,14 @@ flex-direction: row-reverse;
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 480px) {
+.flow_box {
+  padding: 1.2rem;
+}
+}
+
 .flow_box_step {
-  width: 15%;
+  width: 10%;
   display: block;
   margin: auto;
   /* text-align: center; */
@@ -1404,35 +1385,42 @@ flex-direction: row-reverse;
 
 @media screen and (max-width: 768px) {
   .flow_box_step {
-    width: 12%;
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .flow_box_step {
-    width: 25%;
+  .flow_box_textblock {
+    font-size: 14px;
   }
 }
 
-.flow_box_step span p {
+
+.flow_box_step p {
   text-align: center;
 }
 
 .flow_box_step span {
   font-size: 2rem;
   font-weight: bolder;
-  display: block;
+  display: inline;
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+.flow_box_step span {
+  font-size: 1.5rem;
+}
+}
+
+
 .flow_box_textblock {
-  width: 85%;
+  width: 80%;
 }
 
 @media screen and (max-width: 768px) {
   .flow_box_textblock {
-    width: 80%;
+    width: 75%;
   }
 }
 
@@ -1458,26 +1446,20 @@ flex-direction: row-reverse;
 /* Price  料金表 */
 #price {
   background-color: #fff;
-  font-size: 1.2rem;
+  /* font-size: 2rem; */
 }
 
-  @media screen and (max-width: 1024px) {
+  /* @media screen and (max-width: 1024px) {
 #price {
   font-size: 0.75rem;
 }
 }
 
-/* #price table {
-  font-size: clamp(0.875rem, 0.446rem + 2.14vw, 1.625rem)
-} */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   #price {
-    background-color: #fff;
-    /* font-size: 18px; */
-    font-size: clamp(0.875rem, 0.608rem + 1.33vw, 1.625rem);
+      font-size: 0.6rem;
   }
-}
+} */
 
 #price h4 {
   text-align: center;
@@ -1488,12 +1470,31 @@ flex-direction: row-reverse;
   padding: 0.5rem 1rem;
 }
 
+@media screen and (max-width: 480px) {
+#price th, td {
+  padding:0.5rem;
+}
+}
+
 #price table {
-  width: 80%;
+  width: 100%;
   margin: 0 auto 2rem auto;
   border-collapse: collapse;
   border-spacing: 0;
   border: solid 1px #867666;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+#price table {
+  font-size: 0.95rem;
+}
+}
+
+@media screen and (max-width: 480px) {
+#price table {
+  font-size: 0.75rem;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -1507,13 +1508,13 @@ flex-direction: row-reverse;
 }
 
 .pricelist-1_price {
-  width: 33%;
+  width:50%;
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   .pricelist-1_price {
-    width: 35%;
+    width: 50%;
   }
 }
 
@@ -1527,35 +1528,28 @@ flex-direction: row-reverse;
 }
 
 .price_attention {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .price_attention {
     font-size: 14px;
   }
-}
+} */
 
-.price_attention h7 {
-  font-size: 1rem;
+.price_attention h7,price_attention_space h7 {
+  font-size: 0.8rem;
   font-weight: bolder;
 }
-
-@media screen and (max-width: 768px) {
-  .price_attention h7 {
-    font-size: 20px;
-  }
-}
-
-.price_attention p{
-  font-size: 0.9rem;
-}
-
 
 .price_attention_space {
   display: block;
   margin-top: 1.5rem;
+}
+
+#price p{
+    font-size: 0.7rem;
 }
 
 
@@ -1565,21 +1559,32 @@ flex-direction: row-reverse;
 }
 
 #contact .container {
-  width: 80%;
+  width: 50%;
   /* width: 90%; */
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
-  #contact .container {
-    display: block;
-    text-align: center;
-  }
+#contact .container {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 768px) {
+#contact .container {
+  width: 50%;
+  /* width: 90%; */
+  /* display: flex;
+  justify-content: space-between; */
+  display: block;
+}
 }
 
 .contact_subcontainer {
-  width: 40%;
+  /* width: 40%; */
+  width:100%;
   text-align: center;
 }
 
@@ -1606,27 +1611,26 @@ flex-direction: row-reverse;
   margin: auto 1rem;
 }
 
-/* @media screen and (max-width: 1024px) {
-.phonenumber{
-  font-size: 1.5em;
-}
-} */
-
 #contact h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   /* font-size: 1.5em; */
   font-size: clamp(0.875rem, 0.431rem + 2.22vw, 2.125rem);
+  text-align: center;
+}
+
+.contact_subcontainer_sub{
+  display: flex;
+  justify-content: space-between;
 }
 
 #contact h7 {
-  display: block;
+  width:35%;
+  /* display: inline-block; */
   color: #AD7F52;
   border: #AD7F52 solid 1.5px;
   border-radius: 50px;
-  margin: 0.75rem;
-  /* padding: 0.5rem 1.5rem; */
+  margin: 0.75rem 0;
   padding: 2.5% 7.5%;
-  /* font-size: 1.25em; */
   font-size: clamp(0.875rem, 0.608rem + 1.33vw, 1.625rem);
 }
 
@@ -1639,38 +1643,27 @@ flex-direction: row-reverse;
 
 @media screen and (max-width: 768px) {
   #contact h7 {
-    width: 25%;
     display: inline-block;
-    font-size: 1em;
-    margin: 0.75rem 0.5rem;
-    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    margin:  0.5rem;
+    padding: 0.5rem;
   }
 }
 
 #contact a {
-  max-width: 50%;
+  /* max-width: 50%; */
+  width:100%;
   display: inline-block;
   text-decoration: none;
   margin: auto 0;
 }
 
-/* @media screen and (max-width: 1024px) {
-  #contact a {
-    max-width: 54%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #contact a {
-    max-width: 50%;
-  }
-} */
-
 .contact_button {
   /* max-height: 3rem; */
   background-color: #E1B80D;
   margin: auto 0;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
+    padding: 3% 8%;
   text-align: center;
   color: #fff;
   border-radius: 50px;
@@ -1698,8 +1691,8 @@ flex-direction: row-reverse;
   .contact_button {
     width: 100%;
     max-height: 6rem;
-    margin-top: 1.25rem;
-    font-size: 16px;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1710,22 +1703,10 @@ flex-direction: row-reverse;
 }
 
 #access dl {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 1024px) {
-  #access dl {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #access dl {
-    width: 100%;
-  }
 }
 
 #access dt {
