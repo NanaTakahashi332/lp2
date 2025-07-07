@@ -91,6 +91,12 @@ header {
   z-index:900;
 }
 
+@media screen and (max-width: 1024px) {
+header {
+  height: 4.5rem;
+}
+}
+
 @media screen and (max-width: 768px) {
   header {
     height: 4rem;
@@ -118,7 +124,7 @@ header img {
 
 @media screen and (max-width: 480px) {
   .clinicname {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 }
 
@@ -138,7 +144,7 @@ header img {
 
 @media screen and (max-width: 768px) {
   .header_namecontainer {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -159,8 +165,8 @@ header img {
 
 @media screen and (max-width: 1024px) {
   .header_botton_content {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.5rem ;
+    font-size: ;
   }
 }
 
@@ -207,8 +213,7 @@ header h1 {
 
 @media screen and (max-width: 1024px) {
   .h-open {
-    width: 6rem;
-    height: 6rem;
+    width: 4.5rem;
   }
 }
 
@@ -238,6 +243,12 @@ header h1 {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .h-open span {
+    left:22%;
+  }
+}
+
 .h-open span:nth-of-type(1) {
   top: 28%;
 }
@@ -246,14 +257,13 @@ header h1 {
   top: 50%;
 }
 
-
 .h-open span:nth-of-type(3) {
   top: 72%;
 }
 
 /* @media screen and (max-width: 768px) {
   .h-open span:nth-of-type(1) {
-    top: 1rem;
+    top: ;
   }
 
   .h-open span:nth-of-type(2) {
@@ -334,8 +344,6 @@ header h1 {
   }
 } */
 
-
-
 #h-nav {
   position: fixed;
   z-index: 999;
@@ -371,6 +379,12 @@ header h1 {
   margin: 10% 0;
 }
 
+@media screen and (max-width: 480px) {
+#h-nav li {
+  margin: 30% 0;
+}
+}
+
 #h-nav li::after {
   position: absolute;
   content: "";
@@ -384,10 +398,16 @@ header h1 {
 #h-nav li a {
   color: #333;
   display: block;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   /* font-size: clamp(0.9rem, 0.773rem + 0.64vw, 1.25rem); */
   font-weight: 400;
   text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+#h-nav li a {
+  font-size: 1.0rem;
+}
 }
 
 #h-nav.panelactive {
@@ -463,7 +483,7 @@ header h1 {
 #fv h1 {
   max-width: 20rem;
   margin: 2.5rem 0;
-  padding: 1rem;
+  padding: ;
   text-align: center;
   background-color: #867666;
   border-radius: 50px;
@@ -522,7 +542,7 @@ header h1 {
   #salutation img {
     width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1.25rem;
   }
 
   .salutation_textbox {
@@ -548,7 +568,7 @@ header h1 {
   color: #867666;
   font-size: 34px;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: ;
 }
 
 @media screen and (max-width: 768px) {
@@ -568,18 +588,36 @@ header h1 {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 480px) {
+.salutation_textbox_text {
+  margin-top: ;
+}
+}
+
 .salutation_name {
   text-align: right;
 }
 
 
 /* でも、自分で眉を描くと… */
+@media screen and (max-width: 480px) {
+#problem {
+  padding-top: 0;
+}
+}
+
 #problem .container {
   background-color: #7E7364;
   color: #fff;
   padding: 2rem;
   border-radius: 15px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+#problem .container {
+  padding: 1.25rem;
+}
 }
 
 #problem h2 {
@@ -595,7 +633,7 @@ header h1 {
 
 @media screen and (max-width: 480px) {
   #problem h2 {
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 0.5rem;
   }
 }
@@ -664,7 +702,7 @@ header h1 {
   text-align: center;
   color: #867666;
   font-size: 26px;
-  margin-bottom: 1rem;
+  margin-bottom: ;
 }
 
 @media screen and (max-width: 480px) {
@@ -680,8 +718,21 @@ header h1 {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 480px) {
+.about_box {
+  padding: 0.75rem;
+}
+}
+
 .about_box_outline {
   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+.about_box_outline {
+  display: block;
+  text-align: center;
+}
 }
 
 .about_box_outline p {
@@ -691,7 +742,7 @@ header h1 {
   border-radius: 50%;
   background: #867666;
   text-align: center;
-  margin-left: 1rem;
+  margin-left: ;
   font-size: 26px;
   color: #fff;
   line-height: 1.2;
@@ -705,7 +756,7 @@ header h1 {
 }
 
 .about_box_outline h6 {
-  margin: auto 0 auto 1rem;
+  margin: auto 0 auto ;
   color: #867666;
   font-size: 30px;
 }
@@ -718,14 +769,14 @@ header h1 {
 
 @media screen and (max-width: 480px) {
   .about_box_outline h6 {
-    font-size: 20px;
+    font-size: 16px;
+      margin: 1rem auto;
   }
 }
 
 .about_box_inner {
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -761,15 +812,15 @@ header h1 {
 @media screen and (max-width: 768px) {
   .about_box_inner img {
     display: block;
-    margin: 0.5rem auto 1rem;
+    margin: 0.5rem auto ;
   }
 }
 
 @media screen and (max-width: 480px) {
   .about_box_inner img {
-    width: 40%;
+    width: 80%;
     display: block;
-    margin: 0.5rem auto 1rem;
+    margin: 0 auto ;
   }
 
   .about_box_inner_reverse {
@@ -827,7 +878,7 @@ header h1 {
 }
 
 #design li h4 {
-  margin: 1rem 0 0.5rem 0;
+  margin:  0 0.5rem 0;
   text-align: center;
   color: #AD7F52;
   font-size: 28px;
@@ -839,6 +890,12 @@ header h1 {
   }
 }
 
+@media screen and (max-width: 480px) {
+  #design li h4 {
+    font-size: 18px;
+  }
+}
+
 #design li p {
   text-align: left;
 }
@@ -847,7 +904,7 @@ header h1 {
   display: inline-block;
   margin: 3rem auto 0 auto;
   background-color: #fff;
-  padding: 1rem;
+  padding: ;
 }
 
 
@@ -858,6 +915,13 @@ header h1 {
   background-color: #EAE2D6;
 }
 
+@media screen and (max-width: 480px) {
+#flowchart {
+padding-top: 0;
+}
+}
+
+
 #flowchart .flowchart_recommendation {
   width: 80%;
   margin: 0 auto;
@@ -865,6 +929,12 @@ header h1 {
   justify-content: space-between;
   margin-bottom: 2.5rem;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+#flowchart .flowchart_recommendation {
+  display: block;
+}
 }
 
 #flowchart .flowchart_recommendation li {
@@ -878,13 +948,26 @@ header h1 {
 
 @media screen and (max-width: 768px) {
 #flowchart .flowchart_recommendation li {
+  width:85%;
+  font-size: ;
+  margin: 0.5rem auto;
+}
+}
+
+@media screen and (max-width: 480px) {
+#flowchart .flowchart_recommendation li {
+  width:100%;
   font-size: 0.8rem;
 }
 }
 
+.flowdhart-only{
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
-#flowchart .flowchart_recommendation li {
-  font-size: 0.5rem;
+.flowdhart-only{
+  display: none;
 }
 }
 
@@ -946,7 +1029,7 @@ header h1 {
 }
 
 .flowchart_box_inner_text_caution {
-  margin-top: 1rem;
+  margin-top: ;
 }
 
 #flowchart h4 {
@@ -959,10 +1042,20 @@ header h1 {
   font-size: 26px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #flowchart h4 {
-    font-size: 16px;
+    font-size: 1.25rem;
   }
+}
+
+@media screen and (max-width: 768px) {
+.flowchart_menu_box {
+  border: solid 1.75px #867666;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
 }
 
 .flowchart_menu {
@@ -975,6 +1068,12 @@ header h1 {
   margin-bottom: 2rem;
   padding: 1.5rem;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+.flowchart_menu_box {
+  padding: rem;
+}
 }
 
 .flowchart_menu_box h3 {
@@ -1031,14 +1130,16 @@ header h1 {
   }
 }
 
-.flowchart_menu_box ul li {
+/* .flowchart_menu_box ul li {
   flex: 1;
-}
+} */
 
 .image-container{
   width:47.5%;
   aspect-ratio: 1/1;
   overflow: hidden;
+  object-fit: cover;
+  object-position: center; 
 }
 
 .flowchart_menu_box_subimg {
@@ -1089,7 +1190,7 @@ header h1 {
 
 @media screen and (max-width: 480px) {
   #expalanation figure img {
-    max-width: 40%;
+    max-width: 80%;
     text-align: center;
   }
 }
@@ -1136,7 +1237,7 @@ width: 70%;
 }
 
 .casephoto_item {
-  margin-bottom: 1rem;
+  margin-bottom: ;
 }
 
 @media screen and (max-width: 480px) {
@@ -1151,7 +1252,13 @@ width: 70%;
 }
 
 .casephoto_box_before {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+.casephoto_box_before {
+  margin-bottom: 0.5rem;
+}
 }
 
 .casephoto_box_before, .casephoto_box_after {
@@ -1171,7 +1278,7 @@ width: 70%;
 @media screen and (max-width: 480px) {
   .casephoto_box_before, .casephoto_box_after {
     width: 80%;
-    margin: 0 auto 1rem auto;
+    margin: 1rem auto;
   }
 }
 
@@ -1186,6 +1293,7 @@ width: 70%;
   height: 2.5rem;
   text-align: center;
   border: solid 1.75px #867666;
+  border-top: none;
   background-color: #fff;
   margin: auto;
   padding: 0.75rem;
@@ -1200,7 +1308,7 @@ width: 70%;
 .casephoto_button {
   display: inline-block;
   margin: 0 auto;
-  padding: 1rem 5rem;
+  padding:  5rem;
   text-align: center;
   background-color: #867666;
   color: #fff;
@@ -1216,8 +1324,8 @@ width: 70%;
 
 @media screen and (max-width: 480px) {
   .casephoto_button {
-    padding: 1rem 2.5rem;
-    font-size: 20px;
+    padding:  1.5rem;
+    font-size: 18px;
   }
 }
 
@@ -1258,7 +1366,7 @@ flex-direction: row-reverse;
 
 .policy_box_textblock {
   margin: auto 0;
-  padding: 0 1rem;
+  padding: 0 ;
 }
 
 #policy img {
@@ -1269,7 +1377,7 @@ flex-direction: row-reverse;
 @media screen and (max-width: 768px) {
   #policy img {
     display: block;
-    margin: 1rem auto auto auto;
+    margin:  auto auto auto;
   }
 
   #policy .policy_box_reverse {
@@ -1318,6 +1426,12 @@ flex-direction: row-reverse;
     height: 2rem;
     line-height: 2rem;
     padding: 0.5rem;
+    font-size: 1.0rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Label {
     font-size: 0.75rem;
   }
 }
@@ -1335,6 +1449,13 @@ flex-direction: row-reverse;
   transform: rotate(135deg);
 }
 
+@media screen and (max-width: 480px) {
+.Label::before {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+}
+
 .Label,
 .content {
   -webkit-backface-visibility: hidden;
@@ -1346,26 +1467,26 @@ flex-direction: row-reverse;
 .content {
   height: 0;
   margin-bottom: 1rem;
-  /* padding: 0 1rem; */
+  /* padding: 0 ; */
   overflow: hidden;
   border: solid 1.5px #867666;
 }
 
 .content p {
   text-align: left;
-  padding: 0 1rem;
+  padding: 0 0.75rem ;
   font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
   .content p {
-  font-size: 0.75rem;
+  font-size:14px ;
   }
 }
 
 .toggle:checked+.Label+.content {
   height: auto;
-  padding:1rem 0;
+  padding: 0.5rem 0;
   transition: all .3s;
 }
 
@@ -1393,7 +1514,7 @@ flex-direction: row-reverse;
 
 @media screen and (max-width: 480px) {
 .flow_box {
-  padding: 1.2rem;
+  padding: 0.75rem;
 }
 }
 
@@ -1414,7 +1535,8 @@ flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 480px) {
-  .flow_box_textblock {
+  .flow_box_step {
+      width: 7.5%;
     font-size: 14px;
   }
 }
@@ -1422,6 +1544,13 @@ flex-direction: row-reverse;
 
 .flow_box_step p {
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+.flow_box_step p {
+text-align: center;
+font-size: 1rem;
+}
 }
 
 .flow_box_step span {
@@ -1437,6 +1566,12 @@ flex-direction: row-reverse;
 }
 }
 
+@media screen and (max-width: 480px) {
+.flow_box_step span {
+  font-size: 1.25rem;
+}
+}
+
 
 .flow_box_textblock {
   width: 80%;
@@ -1444,9 +1579,16 @@ flex-direction: row-reverse;
 
 @media screen and (max-width: 768px) {
   .flow_box_textblock {
-    width: 75%;
+    width: 80%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .flow_box_textblock {
+    width: 70%;
+  }
+}
+
 
 .flow_box_textblock h6 {
   color: #867666;
@@ -1462,7 +1604,7 @@ flex-direction: row-reverse;
 
 @media screen and (max-width: 480px) {
   .flow_box_textblock h6 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -1487,12 +1629,12 @@ flex-direction: row-reverse;
 
 #price h4 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: ;
   font-size: 1.2rem;
 }
 
 #price th, td {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem ;
 }
 
 @media screen and (max-width: 480px) {
@@ -1564,7 +1706,7 @@ flex-direction: row-reverse;
 } */
 
 .price_attention h7 ,price_attention_space h7 {
-  font-size: 1rem;
+  font-size: ;
   font-weight: bolder;
 }
 
@@ -1619,6 +1761,12 @@ flex-direction: row-reverse;
 }
 }
 
+@media screen and (max-width: 480px) {
+#contact .container {
+  width: 80%;
+}
+}
+
 .contact_subcontainer {
   /* width: 40%; */
   width:100%;
@@ -1645,8 +1793,15 @@ flex-direction: row-reverse;
 .phonenumber {
   font-size: clamp(0.875rem, 0.386rem + 2.44vw, 2.25rem);
   /* font-size: 1.75em; */
-  margin: auto 1rem;
+  margin: auto ;
 }
+
+@media screen and (max-width: 480px) {
+.phonenumber {
+margin:auto 0.5rem;
+}
+}
+
 
 #contact h4 {
   margin-bottom: 0.75rem;
@@ -1661,7 +1816,13 @@ flex-direction: row-reverse;
   justify-content: space-between;
 }
 
-#contact h7 {
+/* @media screen and (max-width: 1024px) {
+.contact_subcontainer_sub{
+  justify-content: space-around;
+}
+} */
+
+#contact h6 {
   width:30%;
   display: block;
   /* display: inline-block; */
@@ -1670,25 +1831,26 @@ flex-direction: row-reverse;
   border-radius: 50px;
   margin: 0.75rem 0;
   padding: 2.5% 7.5%;
-  font-size: clamp(0.875rem, 0.608rem + 1.33vw, 1.625rem);
+  font-size: 1.75rem;
 }
 
 @media screen and (max-width: 1024px) {
-  #contact h7 {
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+  #contact h6 {
+      width:37%;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.25rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #contact h7 {
-    font-size: 0.75rem;
+  #contact h6 {
+    font-size: 0.8rem;
     padding: 0.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #contact h7 {
+  #contact h6 {
   width:35%;
   }
 }
@@ -1705,18 +1867,18 @@ flex-direction: row-reverse;
   /* max-height: 3rem; */
   background-color: #E1B80D;
   margin: auto 0;
-  /* padding: 1rem 2rem; */
+  /* padding:  2rem; */
     padding: 3% 8%;
   text-align: center;
   color: #fff;
   border-radius: 50px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
   .contact_button {
-  font-size: 1rem;
+  font-size: ;
   }
 }
 
@@ -1759,8 +1921,8 @@ flex-direction: row-reverse;
 
 #access dt {
   width: 35%;
-  padding: 0 0 1rem 2rem;
-  margin-bottom: 1rem;
+  padding: 0 0  2rem;
+  margin-bottom: ;
   border-bottom: 1px solid #867666;
   display: flex;
   align-items: center;
@@ -1776,7 +1938,7 @@ flex-direction: row-reverse;
 @media screen and (max-width: 480px) {
   #access dt {
     width: 29%;
-    padding: 0 0 1rem 1rem;
+    padding: 0 0  ;
   }
 
   #access dt:first-of-type {
@@ -1786,8 +1948,8 @@ flex-direction: row-reverse;
 
 #access dd {
   width: 60%;
-  padding: 0 0 1rem 0.5rem;
-  margin-bottom: 1rem;
+  padding: 0 0  0.5rem;
+  margin-bottom: ;
   border-bottom: 1px solid #867666;
   display: flex;
   align-items: center;
@@ -1834,7 +1996,7 @@ flex-direction: row-reverse;
 
 footer {
   background-color: #867666;
-  padding: 1rem 0;
+  padding:  0;
   font-size: 0.8em;
 }
 
