@@ -726,6 +726,13 @@ header h1 {
 
 .about_box_outline {
   display: flex;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+.about_box_outline {
+  margin-bottom: 0;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -756,7 +763,7 @@ header h1 {
 }
 
 .about_box_outline h6 {
-  margin: auto 0 auto ;
+  margin:auto auto auto 1rem;
   color: #867666;
   font-size: 30px;
 }
@@ -770,7 +777,7 @@ header h1 {
 @media screen and (max-width: 480px) {
   .about_box_outline h6 {
     font-size: 16px;
-      margin: 1rem auto;
+    margin: 1rem auto;
   }
 }
 
@@ -795,6 +802,12 @@ header h1 {
   padding: 0 1.25rem;
   margin: auto;
   line-height: 2.0;
+}
+
+@media screen and (max-width: 768px) {
+  .about_box_inner p {
+margin-top: 0.75rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1081,7 +1094,7 @@ padding-top: 0;
 }
 
 .flowchart_menu_box_mainimg {
-  width: 60%;
+  width: 62%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1098,7 +1111,7 @@ padding-top: 0;
 } */
 
 .flowchart_menu_box p {
-  width: 60%;
+  width: 62%;
   text-align: left;
   margin: 0.5rem auto;
 }
@@ -1116,7 +1129,7 @@ padding-top: 0;
 }
 
 .flowchart_menu_box ul {
-  width: 60%;
+  width: 62%;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -1313,7 +1326,7 @@ width: 70%;
 .casephoto_button {
   display: inline-block;
   margin: 0 auto;
-  padding:  5rem;
+  padding:  1.15rem 3rem;
   text-align: center;
   background-color: #867666;
   color: #fff;
@@ -1324,6 +1337,7 @@ width: 70%;
 @media screen and (max-width: 768px) {
   .casephoto_button {
     font-size: 16px;
+    padding:  1rem 2rem;
   }
 }
 
@@ -1479,7 +1493,7 @@ flex-direction: row-reverse;
 
 .content p {
   text-align: left;
-  padding: 0 0.75rem ;
+  padding: 0 1.1rem ;
   font-size: 1.2rem;
 }
 
@@ -1491,7 +1505,7 @@ flex-direction: row-reverse;
 
 .toggle:checked+.Label+.content {
   height: auto;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   transition: all .3s;
 }
 
@@ -1636,7 +1650,7 @@ font-size: 1rem;
 
 #price h4 {
   text-align: center;
-  margin-bottom: ;
+  margin-bottom: 1.2rem;
   font-size: 1.2rem;
 }
 
@@ -1788,19 +1802,33 @@ font-size: 1rem;
 }
 
 .contact_subcontainer_phonenumber {
+  width: 75%;
   display: flex;
-  justify-content: center;
+  /* gap: 20px; */
+  text-align: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+.contact_subcontainer_phonenumber {
+  width: 62%;
+}
 }
 
 #contact img {
-  width: 16%;
+  display: block;
+  width: 26%;
+  margin:auto 0 ;
   /* object-fit: contain; */
 }
 
 .phonenumber {
+  width:72%;
   font-size: clamp(0.875rem, 0.386rem + 2.44vw, 2.25rem);
   /* font-size: 1.75em; */
-  margin: auto ;
+  margin:auto 0 ;
+  /* text-align: center; */
 }
 
 @media screen and (max-width: 480px) {
@@ -1954,7 +1982,7 @@ margin:auto 0.5rem;
 }
 
 #access dd {
-  width: 60%;
+  width: 62%;
   padding: 0 0  0.5rem;
   margin-bottom: ;
   border-bottom: 1px solid #867666;
@@ -1965,12 +1993,12 @@ margin:auto 0.5rem;
 
 @media screen and (max-width: 480px) {
   #access dd {
-    width: 60%;
+    width: 62%;
   }
 }
 
 #access dd:first-of-type {
-  width: 60%;
+  width: 62%;
 }
 
 @media screen and (max-width: 768px) {
@@ -2013,7 +2041,7 @@ margin:auto 0.5rem;
 
 footer {
   background-color: #867666;
-  padding:  0;
+  padding:  1rem 0;
   font-size: 0.8em;
 }
 
