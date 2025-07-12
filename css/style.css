@@ -291,7 +291,6 @@ header h1 {
     top: 28px;
   }
 
-
   .h-open span:nth-of-type(3) {
     top: 39px;
   }
@@ -331,6 +330,16 @@ header h1 {
     left: 27.5%;
     transform: translateY(-6px) rotate(45deg);
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h-open.active span:nth-of-type(1) {
+    left: 21%;
+  }
+
+  .h-open.active span:nth-of-type(3) {
+    left: 21%;
   }
 }
 
@@ -404,9 +413,15 @@ header h1 {
   text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 #h-nav li a {
   font-size: 1.0rem;
+}
+}
+
+@media screen and (max-width: 480px) {
+#h-nav li a {
+  font-size: 0.75rem;
 }
 }
 
@@ -483,7 +498,7 @@ header h1 {
 #fv h1 {
   max-width: 20rem;
   margin: 2.5rem 0;
-  padding: ;
+  padding: 0.5rem;
   text-align: center;
   background-color: #867666;
   border-radius: 50px;
@@ -529,9 +544,20 @@ header h1 {
 
 
 /* 院長挨拶 */
+#salutation {
+  padding-bottom: 0;
+}
+
 #salutation .container {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 786px) {
+#salutation .container {
+  justify-content: center;
+  gap: 1.5rem;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -550,7 +576,11 @@ header h1 {
   }
 }
 
-#salutation img, #salutation .salutation_textbox {
+#salutation img {
+  width: 40%;
+}
+
+#salutation .salutation_textbox {
   width: 48%;
 }
 
@@ -600,11 +630,11 @@ header h1 {
 
 
 /* でも、自分で眉を描くと… */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
 #problem {
   padding-top: 0;
 }
-}
+} */
 
 #problem .container {
   background-color: #7E7364;
@@ -817,6 +847,13 @@ margin-top: 0.75rem;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .about_box_inner p {
+    padding: 0;
+    line-height: 1.5;
+  }
+}
+
 .about_box_inner img {
   border-radius: 10px;
   object-fit: cover;
@@ -855,6 +892,7 @@ margin-top: 0.75rem;
   text-align: center;
   background-color: #EAE2D6;
   padding-top: 0;
+  padding-bottom:0;
 }
 
 #design ul {
@@ -883,6 +921,14 @@ margin-top: 0.75rem;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 480px) {
+#design li a {
+  width: 6.5rem;
+  height: 6.5rem;
+  line-height: 6.5rem;
+}
+}
+
 #design li a img {
   max-width: 6rem;
   max-height: 6rem;
@@ -891,7 +937,7 @@ margin-top: 0.75rem;
 }
 
 #design li h4 {
-  margin:  0 0.5rem 0;
+  margin:0.5rem ;
   text-align: center;
   color: #AD7F52;
   font-size: 28px;
@@ -905,19 +951,37 @@ margin-top: 0.75rem;
 
 @media screen and (max-width: 480px) {
   #design li h4 {
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #design li h4 {
+    font-size: 16px;
   }
 }
 
 #design li p {
   text-align: left;
+  font-size: 1.15rem;
+}
+
+@media screen and (max-width: 480px) {
+#design li p {
+  font-size: 0.9rem;
+}
 }
 
 .design_comment {
   display: inline-block;
   margin: 3rem auto 0 auto;
   background-color: #fff;
-  padding: ;
+}
+
+@media screen and (max-width: 320px) {
+.design_comment {
+text-align: center;
+}
 }
 
 
@@ -928,11 +992,11 @@ margin-top: 0.75rem;
   background-color: #EAE2D6;
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
 #flowchart {
 padding-top: 0;
 }
-}
+} */
 
 
 #flowchart .flowchart_recommendation {
@@ -984,9 +1048,14 @@ padding-top: 0;
 }
 }
 
-
 .flowchart_comment {
   text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+.flowchart_comment {
+  text-align: left;
+}
 }
 
 .flowchart_box {
@@ -1041,9 +1110,9 @@ padding-top: 0;
   line-height: 1.8;
 }
 
-.flowchart_box_inner_text_caution {
+/* .flowchart_box_inner_text_caution {
   margin-top: ;
-}
+} */
 
 #flowchart h4 {
   display: inline-block;
@@ -1058,6 +1127,20 @@ padding-top: 0;
 @media screen and (max-width: 1024px) {
   #flowchart h4 {
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #flowchart h4 {
+      padding: 0.7rem 1.5rem;
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #flowchart h4 {
+      padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
 }
 
@@ -1076,16 +1159,25 @@ padding-top: 0;
 }
 
 .flowchart_menu_box {
+  width:65%;
   border: solid 1.75px #867666;
   background-color: #fff;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  margin:0 auto 2rem;
   padding: 1.5rem;
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 .flowchart_menu_box {
   padding: rem;
+}
+} */
+
+@media screen and (max-width: 480px) {
+.flowchart_menu_box {
+  width:75%;
+  padding: 1rem;
 }
 }
 
@@ -1247,16 +1339,15 @@ width: 70%;
 }
 } */
 
-
 .casephoto_box {
   margin-bottom: 3.5rem;
   display: flex;
   justify-content: space-between;
 }
 
-.casephoto_item {
+/* .casephoto_item {
   margin-bottom: ;
-}
+} */
 
 @media screen and (max-width: 480px) {
   .casephoto_item {
@@ -1318,6 +1409,12 @@ width: 70%;
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+.casephoto_box_before p, .casephoto_box_after p {
+line-height: 1;
+}
+}
+
 .casephoto_box_after p {
   background-color: #AD7F52;
   color: #fff;
@@ -1343,8 +1440,8 @@ width: 70%;
 
 @media screen and (max-width: 480px) {
   .casephoto_button {
-    padding:  1.5rem;
-    font-size: 18px;
+    padding:0.75rem 1.25rem;
+    font-size: 14px;
   }
 }
 
@@ -1354,10 +1451,17 @@ width: 70%;
   background-color: #F7F7F7;
 }
 
+@media screen and (max-width: 480px) {
+#policy {
+padding-bottom: 0;
+}
+}
+
 .policy_box {
   margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
+  gap:1.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1396,12 +1500,18 @@ flex-direction: row-reverse;
 @media screen and (max-width: 768px) {
   #policy img {
     display: block;
-    margin:  auto auto auto;
+    margin:  3% auto auto;
   }
 
   #policy .policy_box_reverse {
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #policy img {
+    margin: 1.25rem  auto;
   }
 }
 
@@ -1418,6 +1528,12 @@ flex-direction: row-reverse;
 #qa {
   background-color: #fff;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+#qa {
+  font-size: 1rem;
+}
 }
 
 #qa label {
@@ -1499,7 +1615,13 @@ flex-direction: row-reverse;
 
 @media screen and (max-width: 768px) {
   .content p {
-  font-size:14px ;
+  font-size:1rem ;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content p {
+  font-size:0.75rem ;
   }
 }
 
@@ -1518,6 +1640,12 @@ flex-direction: row-reverse;
 /* Flow　施術の流れ */
 #flow {
   background-color: #EAE2D6;
+}
+
+@media screen and (max-width: 480px) {
+#flow {
+padding-bottom:1rem;
+}
 }
 
 .flow_box {
@@ -1546,6 +1674,8 @@ flex-direction: row-reverse;
   color: #36454F;
   font-size: 26px;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
@@ -1564,6 +1694,9 @@ flex-direction: row-reverse;
 .flow_box_step p {
   display: block;
   text-align: center;
+  display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -1592,7 +1725,6 @@ font-size: 1rem;
   font-size: 1.25rem;
 }
 }
-
 
 .flow_box_textblock {
   width: 80%;
@@ -1634,6 +1766,12 @@ font-size: 1rem;
 #price {
   background-color: #fff;
   /* font-size: 2rem; */
+}
+
+@media screen and (max-width: 480px) {
+#price {
+padding-bottom: 2rem;
+}
 }
 
   /* @media screen and (max-width: 1024px) {
@@ -1758,6 +1896,12 @@ font-size: 1rem;
   background-color: #F7F7F7;
 }
 
+@media screen and (max-width: 768px) {
+#contact {
+font-size: 1.75rem;
+}
+}
+
 #contact .container {
   width: 50%;
   /* width: 90%; */
@@ -1766,15 +1910,15 @@ font-size: 1rem;
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 #contact .container {
   width: 100%;
 }
-}
+} */
 
 @media screen and (max-width: 768px) {
 #contact .container {
-  width: 50%;
+  width: 75%;
   /* width: 90%; */
   /* display: flex;
   justify-content: space-between; */
@@ -1798,6 +1942,7 @@ font-size: 1rem;
   .contact_subcontainer {
     width: 100%;
     text-align: center;
+
   }
 }
 
@@ -1807,12 +1952,18 @@ font-size: 1rem;
   /* gap: 20px; */
   text-align: center;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 .contact_subcontainer_phonenumber {
-  width: 62%;
+  /* width: 55%; */
+  display: flex;
+  /* gap: 20px; */
+  text-align: center;
+  margin: 0 auto;
+  gap:2.5%;
 }
 }
 
@@ -1824,7 +1975,7 @@ font-size: 1rem;
 }
 
 .phonenumber {
-  width:72%;
+  /* width:72%; */
   font-size: clamp(0.875rem, 0.386rem + 2.44vw, 2.25rem);
   /* font-size: 1.75em; */
   margin:auto 0 ;
@@ -1837,7 +1988,6 @@ margin:auto 0.5rem;
 }
 }
 
-
 #contact h4 {
   margin-bottom: 0.75rem;
   /* font-size: 1.5em; */
@@ -1846,9 +1996,19 @@ margin:auto 0.5rem;
 }
 
 .contact_subcontainer_sub{
-  width: 100%;
+  width: 78%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap:2.5%;
+}
+
+@media screen and (max-width: 768px) {
+.contact_subcontainer_sub {
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+  }
 }
 
 /* @media screen and (max-width: 1024px) {
@@ -1858,7 +2018,7 @@ margin:auto 0.5rem;
 } */
 
 #contact h6 {
-  width:30%;
+  width:20%;
   display: block;
   /* display: inline-block; */
   color: #AD7F52;
@@ -1866,13 +2026,13 @@ margin:auto 0.5rem;
   border-radius: 50px;
   margin: 0.75rem 0;
   padding: 2.5% 7.5%;
-  font-size: 1.75rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
   #contact h6 {
       width:37%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.5rem 1.25rem;
   }
 }
@@ -1899,23 +2059,25 @@ margin:auto 0.5rem;
 }
 
 .contact_button {
+  width:78%;
   /* max-height: 3rem; */
   background-color: #E1B80D;
-  margin: auto 0;
+  /* margin: auto 0; */
+  margin: auto;
   /* padding:  2rem; */
     padding: 3% 8%;
   text-align: center;
   color: #fff;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .contact_button {
   font-size: ;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .contact_button {
@@ -1954,10 +2116,22 @@ margin:auto 0.5rem;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+#access dl {
+justify-content: center;
+}
+}
+
+@media screen and (max-width: 320px) {
+#access dl {
+font-size: 0.75rem;
+}
+}
+
 #access dt {
   width: 35%;
-  padding: 0 0  2rem;
-  margin-bottom: ;
+  padding: 1rem 0;
+  /* margin-bottom: ; */
   border-bottom: 1px solid #867666;
   display: flex;
   align-items: center;
@@ -1973,7 +2147,7 @@ margin:auto 0.5rem;
 @media screen and (max-width: 480px) {
   #access dt {
     width: 29%;
-    padding: 0 0  ;
+    /* padding: 0 0  ; */
   }
 
   #access dt:first-of-type {
@@ -1983,8 +2157,8 @@ margin:auto 0.5rem;
 
 #access dd {
   width: 62%;
-  padding: 0 0  0.5rem;
-  margin-bottom: ;
+  padding: 0.5rem 0;
+  /* margin-bottom: ; */
   border-bottom: 1px solid #867666;
   display: flex;
   align-items: center;
