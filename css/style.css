@@ -155,7 +155,7 @@ header img {
 
 .header_botton_content {
   margin: 0 0.5rem;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 1rem;
   background-color: #D5C3AA;
   color: #ffffff;
   border-radius: 20px;
@@ -166,9 +166,8 @@ header img {
 @media screen and (max-width: 1024px) {
   .header_botton_content {
     padding: 0.5rem ;
-    font-size: ;
   }
-}
+} 
 
 @media screen and (max-width: 768px) {
   .header_botton_content {
@@ -861,15 +860,16 @@ margin-top: 0.75rem;
 
 @media screen and (max-width: 768px) {
   .about_box_inner img {
+    width:55%;
     display: block;
     margin: 0.5rem auto ;
+    aspect-ratio: 1/1;
   }
 }
 
 @media screen and (max-width: 480px) {
   .about_box_inner img {
     width: 80%;
-    display: block;
     margin: 0 auto ;
   }
 
@@ -976,6 +976,13 @@ margin-top: 0.75rem;
   display: inline-block;
   margin: 3rem auto 0 auto;
   background-color: #fff;
+    font-size: 1.15rem;
+}
+
+@media screen and (max-width: 480px) {
+.design_comment {
+  font-size: 0.9rem;
+}
 }
 
 @media screen and (max-width: 320px) {
@@ -1176,7 +1183,7 @@ padding-top: 0;
 
 @media screen and (max-width: 480px) {
 .flowchart_menu_box {
-  width:75%;
+  width:100%;
   padding: 1rem;
 }
 }
